@@ -5,44 +5,54 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="./styles/normalize.css">
+   <link rel="stylesheet" href="./styles/styl.css">
    <title>Document</title>
 </head>
 
 <body>
    <header class="header">
       <div class="header__top">
-         <nav>
-            <ul>
-               <li><a href="#"></a>Home</li>
-               <li><a href="#"></a>Shop</li>
-               <li><a href="#"></a>Story</li>
-               <li><a href="#"></a>About</li>
-               <li><a href="#"></a>Blog</li>
-               <li><a href="#"></a>Testimonials</li>
+         <nav class="header__nav">
+            <ul class="header__list nav">
+               <li class="nav__list-item"><a class="nav__link" href="#"></a>Home</li>
+               <li class="nav__list-item"><a class="nav__link" href="#"></a>Shop</li>
+               <li class="nav__list-item"><a class="nav__link" href="#"></a>Story</li>
+               <li class="nav__list-item"><a class="nav__link" href="#"></a>About</li>
+               <li class="nav__list-item"><a class="nav__link" href="#"></a>Blog</li>
+               <li class="nav__list-item"><a class="nav__link" href="#"></a>Testimonials</li>
             </ul>
          </nav>
-         <a href="#" class="logo"><img src="#" alt=""></a>
-         <div class="personal">
-            <ul>
-               <li><a href="#"><img src="#" alt=""></a></li>
-               <li><a href="#"></a><img src="#" alt=""></li>
-               <li><a href="#"></a><img src="#" alt=""><span>0</span></li>
+         <div class="header__logo logo">
+            <a href="#" class="logo__link"><img class="logo__jmg" src="#" alt=""></a>
+         </div>
+         <div class="header__personal personal">
+            <ul class="personal__list">
+               <li class="personal__list-item"><a class="personal__link" href="#"><img class="personal__jmg" src="#"
+                        alt=""></a></li>
+               <li class="personal__list-item"><a class="personal__link" href="#"></a><img class="personal__jmg" src="#"
+                     alt=""></li>
+               <li class="personal__list-item"><a class="personal__link" href="#"></a><img class="personal__jmg" src="#"
+                     alt=""><span class="personal__counter">0</span></li>
             </ul>
          </div>
-         <div class="social">
-            <ul>
-               <li><a href="#"><img src="#" alt=""></a></li>
-               <li><a href="#"><img src="#" alt=""></a></li>
-               <li><a href="#"><img src="#" alt=""></a></li>
+         <div class="header__social social">
+            <ul class="social__list">
+               <li class="social__list-item"><a class="social__link" href="#"><img class="social__jmg" src="#"
+                        alt=""></a></li>
+               <li class="social__list-item"><a class="social__link" href="#"><img class="social__jmg" src="#"
+                        alt=""></a></li>
+               <li class="social__list-item"><a class="social__link" href="#"><img class="social__jmg" src="#"
+                        alt=""></a></li>
             </ul>
          </div>
       </div>
       <div class="header__content">
-         <a href="#" class="">Shop New</a>
+         <a class="header__link" href="#">Shop New</a>
       </div>
    </header>
    <section class="smoothies">
-      <h2>What are these smoothies?</h2>
+      <h2 class="smoothies__title title--orang title">What are these smoothies?</h2>
       <p>A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yogurt,
          ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such as
          water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder, plant milk,
@@ -161,7 +171,18 @@
          <button class="right"><img src="#" alt=""></button>
       </div>
    </section>
-   <section class="bnstagram">
+   <section class="blog">
+      <h2>Our blog</h2>
+      <img src="#" alt="">
+      <article class="blog__text">
+         <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
+         <time datetime="2020-01-16">Jun 16, 2020</time>
+         <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed juice
+            doesn't even have to be blended like a smoothie, i.e. a green juice or anything... <a href="#">Read More</a>
+         </p>
+      </article>
+   </section>
+   <section class="instagram">
       <h3>ashasuperfoods</h3>
       <ul>
          <li><a href="#"><img src="#" alt=""></a></li>
@@ -173,8 +194,8 @@
    </section>
    <footer class="footer">
       <div class="footer__header">
-         <div class="footer__logo">
-            <a href="#" class="logo"><img src="#" alt=""></a>
+         <div class="logo footer__logo">
+            <a href="#" class="logo__link"><img class="logo__jmg" src="#" alt=""></a>
          </div>
          <div class="footer__information">
             <h4>Information</h4>
