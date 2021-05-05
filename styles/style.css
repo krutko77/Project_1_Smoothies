@@ -1,14 +1,38 @@
 .header {}
 
-.header__to {}
+.header__top {}
+
+.header__nav {}
 
 .header__list {}
+
+.nav__list-item {}
+
+.nav__link {}
 
 .logo {}
 
 .header__logo {}
 
-.footer__logo {}
+.logo__link {}
+
+.logo__jmg {}
+
+.personal {}
+
+.header__personal {}
+
+.personal__list {}
+
+.personal__list-item {}
+
+.personal__link {}
+
+.personal__jmg {}
+
+.personal__counter {}
+
+.social {}
 
 .header__social {}
 
@@ -20,3 +44,66 @@
 
 .social__jmg {}
 
+.header__button {}
+
+.button--green-bg {}
+
+.header__link {}
+
+
+.smoothies {}
+
+.title {}
+
+.smoothies__title {}
+
+.text {}
+
+.smoothies__text {}
+
+.smoothies__wrapper {}
+
+.smoothies__item {}
+
+.smoothies__img {}
+
+.smoothies__caption {}
+
+.about {}
+
+.about__image {}
+
+.about__img {}
+
+.about__content {}
+
+.about__title {}
+
+.about__title--green {}
+
+.about__ul {}
+
+.about__list-item {}
+
+.about__button {}
+
+.about-link {}
+
+
+.products {}
+
+.products__item {}
+
+.products__img {}
+
+.products__title {}
+
+.products__caption {}
+
+.products__button {}
+
+
+
+
+
+.footer__logo {}
