@@ -46,7 +46,7 @@
 
 .header__button {}
 
-.button--green-bg {}
+.button .button--green-bg {}
 
 .header__link {}
 
@@ -86,6 +86,10 @@
 .about__list-item {}
 
 .about__button {}
+
+.button--green-bg {}
+
+.button--orange-border {}
 
 .about-link {}
 
@@ -145,6 +149,23 @@
 
 .testimonials__img-right {}
 
+
+
+.blog__title {}
+
+.blog__image {}
+
+.blog__img {}
+
+.blog__content {}
+
+.blog__subtitle {}
+
+.blod__date {}
+
+.blog__text {}
+
+.blog__link {}
 
 
 
