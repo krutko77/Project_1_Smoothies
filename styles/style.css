@@ -123,6 +123,7 @@
 
 .story__img {}
 
+
 .testimonials {}
 
 .testimonials__title {}
@@ -150,6 +151,7 @@
 .testimonials__img-right {}
 
 
+.blog {}
 
 .blog__title {}
 
@@ -168,9 +170,69 @@
 .blog__link {}
 
 
+.instagram {}
+
+.instagram__subtitle {}
+
+.instagram__list {}
+
+.instagram__list-item {}
+
+.instagram__link {}
+
+.instagram__img {}
 
 
+.footer {}
 
-
+.footer__header {}
 
 .footer__logo {}
+
+.footer__information {}
+
+.footer__subtitle {}
+
+.footer__list-info {}
+
+.footer__list-info-item {}
+
+.footer__link-info {}
+
+.footer__payment {}
+
+.footer__list-payment {}
+
+.footer__list-payment-item {}
+
+.footer__link-payment {}
+
+.footer__img-payment {}
+
+.footer__social {}
+
+.footer__input {}
+
+
+.footer__list-social {}
+
+.footer__list-social-item {}
+
+.footer__icon-social {}
+
+.footer__bottom {}
+
+.footer__bottom-text {}
+
+.form {}
+
+.form__input-text {}
+
+.form__input-submit {}
+
+.footer__bottom {}
+
+.footer__bottom-text {}
+
+
+
