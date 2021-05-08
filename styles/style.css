@@ -44,9 +44,9 @@
 
 .social__jmg {}
 
-.header__button {}
+.header__btn {}
 
-.button .button--green-bg {}
+.btn {}
 
 .header__link {}
 
@@ -85,11 +85,7 @@
 
 .about__list-item {}
 
-.about__button {}
-
-.button--green-bg {}
-
-.button--orange-border {}
+.about__btn {}
 
 .about-link {}
 
@@ -104,7 +100,7 @@
 
 .products__caption {}
 
-.products__button {}
+.products__btn {}
 
 
 .story {}
@@ -115,7 +111,7 @@
 
 .story__text {}
 
-.story__button {}
+.story__btn {}
 
 .story__link {}
 
@@ -136,11 +132,11 @@
 
 .testimonials__caption--orange {}
 
-.testimonials__image {}
+.testimonials__wrap-img {}
 
 .testimonials__img {}
 
-.testimonials__button {}
+.testimonials__buttons {}
 
 .testimonials__button-left {}
 
@@ -155,7 +151,7 @@
 
 .blog__title {}
 
-.blog__image {}
+.blog__wrap-img {}
 
 .blog__img {}
 
@@ -228,11 +224,10 @@
 
 .form__input-text {}
 
-.form__input-submit {}
+.form__btn {}
 
 .footer__bottom {}
 
-.footer__bottom-text {}
+.footer__small {}
 
-
-
+.footer__go-top {}
