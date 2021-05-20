@@ -165,9 +165,11 @@
 
 .smoothies__grid {
    display: grid;
-   grid-template-columns: 240px 263px 240px 263px;
-   grid-template-rows: 181px 206px;
+   grid-template-columns: 255px 255px 255px 255px;
+   grid-template-rows: 190px 190px;
    margin-top: 61px;
+   background: #9ca2a2;
+   gap: 2px;
 
    /* border: 1px solid red; */
 }
@@ -175,9 +177,11 @@
 .grid__item {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
    margin: 0;
+   background: white;
+   padding: 35px;
 
    /* border: 1px solid red; */
 }
