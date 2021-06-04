@@ -460,7 +460,6 @@ html {
    align-items: flex-end;
    padding-top: 100px;
    padding-right: 410px;
-   padding-bottom: 100px;
    position: relative;
 }
 
@@ -532,20 +531,44 @@ html {
 }
 
 
-.instagram {}
+.instagram__wrap {
+   display: flex;
+   flex-direction: column;
+}
 
-.instagram__subtitle {}
+.instagram__list {
+   display: flex;
+   padding: 0;
+   margin-bottom: 10px;
+}
 
-.instagram__list {}
+.instagram__item {
+   position: relative;
+}
 
-.instagram__list-item {}
+.instagram__item::before {
+   content: url(../img/inst_shadow.png);
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 2;
+}
 
-.instagram__link {}
+.instagram__item::after {
+   content: url(../icons/inst_icon.png);
+   position: absolute;
+   top: 340px;
+   right: 20px;
+   z-index: 3;
+}
 
-.instagram__img {}
 
 
-.footer {}
+
+
+.footer__wrap {
+   background-color: #f7ac38;
+}
 
 .footer__header {}
 
