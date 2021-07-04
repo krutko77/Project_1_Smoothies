@@ -68,7 +68,7 @@ ul {
 .menu__item {
    margin-right: 35px;
    font-family: Mulish;
-   font-size: 16px;
+   font-size: 1.6rem;
    font-weight: 700;
    text-transform: uppercase;
 }
@@ -83,7 +83,7 @@ ul {
 
 .header__logo {
    position: absolute;
-   top: 67px;
+   top: 70px;
    left: 50%;
    transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
@@ -235,8 +235,8 @@ ul {
 
 .text {
    font-family: Mulish;
-   font-size: 18px;
-   line-height: 35px;
+   font-size: 1.8rem;
+   line-height: 3.5rem;
    font-weight: 400;
    color: #1e1e1e;
 }
@@ -327,8 +327,8 @@ ul {
 
 .about__list {
    font-family: Mulish;
-   font-size: 21px;
-   line-height: 44px;
+   font-size: 2.1rem;
+   line-height: 4.4rem;
    font-weight: 400;
    color: #ffffff;
    padding-left: 25px;
@@ -537,8 +537,8 @@ ul {
 .testimonials__personal::after {
    content: "Sarah A";
    font-family: Mulish;
-   font-size: 200px;
-   line-height: 40px;
+   font-size: 20rem;
+   line-height: 4rem;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #521905;
@@ -551,15 +551,15 @@ ul {
 
 .testimonials__text {
    text-align: center;
-   font-size: 18px;
-   line-height: 35px;
+   font-size: 1.8rem;
+   line-height: 3.5rem;
    font-weight: 400;
    color: #ffffff;
    margin-bottom: 5px;
 }
 
 .testimonials__caption--orange {
-   line-height: 45px;
+   line-height: 4.5rem;
    font-weight: 600;
    color: #f7ae3b;
    margin: 0;
@@ -667,8 +667,8 @@ ul {
 
 .blog__subtitle {
    font-family: Mulish;
-   font-size: 30px;
-   line-height: 40px;
+   font-size: 3.0rem;
+   line-height: 4.0rem;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #f2612d;
@@ -807,8 +807,8 @@ ul {
 
 .footer__subtitle {
    font-family: Mulish;
-   font-size: 26px;
-   line-height: 40px;
+   font-size: 2.6rem;
+   line-height: 4.0rem;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #ffffff;
@@ -826,8 +826,8 @@ ul {
 
 .footer__link-info {
    font-family: Mulish;
-   font-size: 18px;
-   line-height: 35px;
+   font-size: 1.8rem;
+   line-height: 3.5rem;
    font-weight: 700;
    letter-spacing: -0.02em;
    color: #6d450c;
@@ -868,8 +868,8 @@ ul {
 
 .form__input::placeholder {
    font-family: Mulish;
-   font-size: 17px;
-   line-height: 35px;
+   font-size: 1.7rem;
+   line-height: 3.5rem;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #6d450c;
@@ -920,8 +920,8 @@ ul {
    background-color: transparent;
    border: none;
    font-family: Mulish;
-   font-size: 16px;
-   line-height: 40px;
+   font-size: 1.6rem;
+   line-height: 4.0rem;
    font-weight: 800;
    text-transform: uppercase;
    letter-spacing: 0.04em;
@@ -939,8 +939,8 @@ ul {
 .footer__small {
    align-self: center;
    font-family: Mulish;
-   font-size: 13px;
-   line-height: 35px;
+   font-size: 1.3rem;
+   line-height: 3.5rem;
    font-weight: 400;
    letter-spacing: 0.02em;
    color: #af8a82;
@@ -982,14 +982,195 @@ ul {
    right: 60px;
    width: 50px;
    font-family: Mulish;
-   font-size: 16px;
-   line-height: 40px;
+   font-size: 1.6rem;
+   line-height: 4.0rem;
    font-weight: 400;
    letter-spacing: -0.02em;
    color: #ffffff;
 }
 
 @media screen and (max-width: 768px) {
+
+   html,
+   body {
+      font-size: 9px;
+   }
+
+   .header__burger-btn {
+      display: block;
+   }
+
+   .header__top {
+      margin-bottom: 135px;
+   }
+
+   .header__navigation {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #0aa566;
+      z-index: 999;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: 150px;
+   }
+
+   .menu__list {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu__item {
+      margin: 0 0 50px;
+   }
+
+   .header__right-block {
+      margin-bottom: 100px;
+   }
+
+   .header__logo {
+      top: 100px;
+   }
+
+   .smoothies__wrap {
+      padding: 50px 0 95px;
+   }
+
+   .smoothies__title {
+      margin: 0 0 25px;
+   }
+
+   .smoothies__container {
+      max-width: 710px;
+      margin: 0 0 45px;
+   }
+
+   .smoothies__grid {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .grid__item {
+      padding: 30px 35px 35px;
+   }
+
+   .about {
+      padding: 55px 0 100px;
+   }
+
+   .about__wrap {
+      justify-content: flex-start;
+      max-width: 700px;
+   }
+
+   .about__img-wrap {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-bottom: 70px;
+   }
+
+   .story {
+      padding: 0px 0 80px;
+   }
+
+   .story__wrap {
+      max-width: 700px;
+   }
+
+   .story__content {
+      padding-top: 75px;
+      margin-right: 0;
+   }
+
+   .story__img-wrap {
+      margin-left: auto;
+   }
+
+   .story__btn {
+      margin-bottom: 80px
+   }
+
+   .testimonials__wrap {
+      padding: 115px 0 80px;
+   }
+
+   .testimonials__wrap::after {
+      display: none;
+   }
+
+   .testimonials__title {
+      margin: 0 0 100px;
+   }
+
+
+   .testimonials__personal::after {
+      font-size: 180px;
+      line-height: 40px;
+      top: 275px;
+      left: 0px;
+   }
+
+   .testimonials__content {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-bottom: 15px;
+   }
+
+   .testimonials__paragraph {
+      margin: 75px 0;
+   }
+
+   .blog {
+      padding: 100px 25px;
+   }
+
+   .blog__content::before {
+      display: none;
+   }
+
+   .blog__wrap-img {
+      margin: 0;
+   }
+
+   .blog__right-block {
+      padding: 35px 0;
+   }
+
+   .footer__header-wrap {
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 0px 55px;
+   }
+
+   .footer__logo {
+      margin: 0 0 55px;
+   }
+
+   .footer__central-block {
+      margin: 0 0 50px 30px;
+   }
+
+   .footer__form-social {
+      margin-bottom: 25px;
+   }
+
+   .link__go-top {
+      position: fixed;
+      bottom: 45px;
+      right: 20px;
+
+   }
+}
+
+
+@media screen and (max-width: 360px) {
+   .header__navigation {
+      display: none;
+   }
+
    .header__burger-btn {
       display: block;
    }
@@ -1158,18 +1339,4 @@ ul {
 
    }
 
-
-
-
-
-
-
-
-
-
-
-   @media screen and (max-width: 320px) {
-      .header__navigation {
-         display: none;
-      }
-   }
+}
