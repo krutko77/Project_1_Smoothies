@@ -213,8 +213,13 @@ ul {
    margin: 0 auto;
 }
 
+.smoothies__container {
+   padding: 100px 20px 120px;
+   max-width: 1050px;
+   margin: 0 auto;
+}
+
 .smoothies__wrap {
-   padding: 100px 0 120px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -241,7 +246,7 @@ ul {
    color: #1e1e1e;
 }
 
-.smoothies__container {
+.smoothies__text {
    max-width: 915px;
    text-align: center;
    margin: 0 0 65px;
@@ -279,7 +284,12 @@ ul {
 
 .about {
    background-color: #16816b;
-   padding: 90px 0 95px;
+}
+
+.about__container {
+   max-width: 1255px;
+   padding: 90px 20px 95px;
+   margin: 0 auto;
 }
 
 .about__wrap {
@@ -287,8 +297,6 @@ ul {
    justify-content: flex-end;
    flex-wrap: wrap;
    position: relative;
-   margin: 0 auto;
-   max-width: 1215px;
 }
 
 .about__img-wrap {
@@ -435,16 +443,16 @@ ul {
    -o-transform: translate(1px, 2px);
 }
 
-.story {
-   padding: 125px 0 155px;
+.story__container {
+   max-width: 1340px;
+   padding: 125px 20px 155px;
+   margin: 0 auto;
 }
 
 .story__wrap {
    display: flex;
    flex-wrap: wrap;
    position: relative;
-   max-width: 1300px;
-   margin: 0 auto;
 }
 
 .story__content {
@@ -457,7 +465,7 @@ ul {
    margin: 0 0 40px;
 }
 
-.story__container {
+.story__text {
    max-width: 515px;
    margin-bottom: 50px;
 }
@@ -486,13 +494,21 @@ ul {
    background: url(../img/story_stamp.png) no-repeat;
 }
 
-.testimonials__wrap {
+.testimonials {
    background: url(../img/testimonials_bg.jpg) no-repeat;
    background-size: cover;
    background-position: center;
    position: relative;
    z-index: -2;
-   padding: 115px 0 75px;
+}
+
+.testimonials__container {
+   max-width: 1200px;
+   padding: 115px 20px 75px;
+   margin: 0 auto;
+}
+
+.testimonials__wrap {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -614,8 +630,10 @@ ul {
    -o-transform: translateX(10px);
 }
 
-.blog {
-   padding: 100px 0 190px;
+.blog__container {
+   max-width: 1240px;
+   padding: 100px 20px 190px;
+   margin: 0 auto;
 }
 
 .blog__wrap {
@@ -623,8 +641,6 @@ ul {
    flex-direction: column;
    align-items: center;
    position: relative;
-   max-width: 1200px;
-   margin: 0 auto;
 }
 
 .blog__title {
@@ -680,7 +696,7 @@ ul {
    font-weight: 400;
 }
 
-.blog__paragraph {
+.blog__text {
    max-width: 475px;
    margin: 0 0 0 auto;
 }
@@ -991,10 +1007,10 @@ ul {
 
 @media screen and (max-width: 768px) {
 
-   html,
+   /* html,
    body {
       font-size: 9px;
-   }
+   } */
 
    .header__burger-btn {
       display: block;
@@ -1167,6 +1183,12 @@ ul {
 
 
 @media screen and (max-width: 360px) {
+
+   html,
+   body {
+      font-size: 9px;
+   }
+
    .header__navigation {
       display: none;
    }
