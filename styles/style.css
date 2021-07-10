@@ -21,7 +21,7 @@ ul {
 }
 
 .header__container {
-   max-width: 1740px;
+   max-width: 1720px;
    margin: 0 auto;
    padding: 0 30px;
 }
@@ -68,7 +68,8 @@ ul {
 .menu__item {
    margin-right: 35px;
    font-family: Mulish;
-   font-size: 1.6rem;
+   /* font-size: 1.6rem; */
+   font-size: calc(14px + 2 * (100vw / 1980));
    font-weight: 700;
    text-transform: uppercase;
 }
@@ -169,7 +170,7 @@ ul {
    font-family: Mulish;
    /* font-size: 21px; */
    font-size: calc(16px + 5 * (100vw / 1980));
-   line-height: 22px;
+   line-height: 1.2;
    color: #ffffff;
    font-weight: 800;
 }
@@ -210,14 +211,14 @@ ul {
    background-color: #0aa566;
    /* font-size: 24px; */
    font-size: calc(20px + 4 * (100vw / 1980));
-   line-height: 40px;
+   line-height: 1.2;
    padding: 0 38px;
    margin: 0 auto;
 }
 
 .smoothies__container {
    max-width: 1740px;
-   padding: 100px 30px 120px;
+   padding: 90px 30px 125px;
    margin: 0 auto;
 }
 
@@ -231,20 +232,21 @@ ul {
    font-family: Mulish;
    /* font-size: 50px; */
    font-size: calc(30px + 20 * (100vw / 1980));
-   line-height: 40px;
+   line-height: 1.2;
    font-weight: 800;
    color: #f7ae3b;
    letter-spacing: -0.02em;
 }
 
 .smoothies__title {
-   margin: 0 0 40px;
+   margin: 0 0 30px;
 }
 
 .text {
    font-family: Mulish;
-   font-size: 1.8rem;
-   line-height: 3.5rem;
+   /* font-size: 1.8rem; */
+   font-size: calc(16px + 2 * (100vw / 1980));
+   line-height: 2.0;
    font-weight: 400;
    color: #1e1e1e;
 }
@@ -280,7 +282,7 @@ ul {
    font-family: Mulish;
    /* font-size: 25px; */
    font-size: calc(15px + 10 * (100vw / 1980));
-   line-height: 40px;
+   line-height: 1.6;
    font-weight: 800;
    color: #f2612d;
    letter-spacing: -0.02em;
@@ -291,8 +293,8 @@ ul {
 }
 
 .about__container {
-   max-width: 1220px;
-   padding: 90px 30px 95px;
+   max-width: 1200px;
+   padding: 90px 30px 100px;
    margin: 0 auto;
 }
 
@@ -307,7 +309,7 @@ ul {
    flex: 0 1 691px;
    position: absolute;
    top: -25px;
-   left: -210px;
+   left: -215px;
 }
 
 .about__img {
@@ -318,7 +320,7 @@ ul {
 .about__title {
    /* font-size: 55px; */
    font-size: calc(35px + 20 * (100vw / 1980));
-   line-height: 60px;
+   line-height: 1.1;
    color: #ffffff;
    margin: 0 0 45px;
 }
@@ -331,7 +333,7 @@ ul {
 .about__title--green::after {
    content: "";
    position: absolute;
-   top: 65px;
+   top: 60px;
    right: -20px;
    width: 450px;
    height: 13px;
@@ -342,7 +344,7 @@ ul {
    font-family: Mulish;
    /* font-size: 2.1rem; */
    font-size: calc(18px + 3 * (100vw / 1980));
-   line-height: 4.4rem;
+   line-height: 2.1;
    font-weight: 400;
    color: #ffffff;
    padding-left: 25px;
@@ -390,7 +392,7 @@ ul {
    background: url(../img/products_bg_4.png)
 }
 
-.products__img-wrap {
+.products__img {
    margin-bottom: 30px;
 }
 
@@ -452,8 +454,8 @@ ul {
 }
 
 .story__container {
-   max-width: 1740px;
-   padding: 125px 30px 155px;
+   max-width: 1720px;
+   padding: 120px 30px 160px;
    margin: 0 auto;
 }
 
@@ -471,7 +473,7 @@ ul {
 }
 
 .story__title {
-   margin: 0 0 40px;
+   margin: 0 0 30px;
 }
 
 .story__text {
@@ -513,7 +515,7 @@ ul {
 
 .testimonials__container {
    max-width: 1220px;
-   padding: 115px 30px 75px;
+   padding: 110px 30px 80px;
    margin: 0 auto;
 }
 
@@ -534,7 +536,7 @@ ul {
 }
 
 .testimonials__title {
-   margin: 0 0 130px;
+   margin: 0 0 115px;
 }
 
 .testimonials__title--red {
@@ -564,12 +566,12 @@ ul {
    content: "Sarah A";
    font-family: Mulish;
    font-size: 20rem;
-   line-height: 4rem;
+   line-height: 2.0;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #521905;
    position: absolute;
-   top: 15px;
+   top: -165px;
    left: -40px;
    opacity: 0.6;
    z-index: -1;
@@ -577,15 +579,14 @@ ul {
 
 .testimonials__text {
    text-align: center;
-   font-size: 1.8rem;
    line-height: 3.5rem;
    font-weight: 400;
    color: #ffffff;
-   margin-bottom: 5px;
+   margin-bottom: 20px;
 }
 
 .testimonials__caption--orange {
-   line-height: 4.5rem;
+   line-height: 1.2;
    font-weight: 600;
    color: #f7ae3b;
    margin: 0;
@@ -642,12 +643,12 @@ ul {
 
 .blog__container {
    max-width: 1200px;
-   padding: 100px 30px 195px;
+   padding: 90px 30px 190px;
    margin: 0 auto;
 }
 
 .blog__title {
-   margin: 0 auto 55px 0;
+   margin: 0 auto 45px 0;
 }
 
 .blog__content-wrap {
@@ -689,7 +690,7 @@ ul {
 .blog__subtitle {
    font-family: Mulish;
    font-size: 3.0rem;
-   line-height: 4.0rem;
+   line-height: 1.3;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #f2612d;
@@ -749,7 +750,7 @@ ul {
    margin: 0 0 40px;
    font-family: Mulish;
    font-size: 24px;
-   line-height: 40px;
+   line-height: 1.6;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #0aa566;
@@ -834,7 +835,7 @@ ul {
 .footer__subtitle {
    font-family: Mulish;
    font-size: 2.6rem;
-   line-height: 4.0rem;
+   line-height: 1.5;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #ffffff;
@@ -853,7 +854,7 @@ ul {
 .footer__link-info {
    font-family: Mulish;
    font-size: 1.8rem;
-   line-height: 3.5rem;
+   line-height: 1.9;
    font-weight: 700;
    letter-spacing: -0.02em;
    color: #6d450c;
@@ -891,7 +892,7 @@ ul {
 .form__input::placeholder {
    font-family: Mulish;
    font-size: 1.7rem;
-   line-height: 3.5rem;
+   line-height: 2.0;
    font-weight: 800;
    letter-spacing: -0.02em;
    color: #6d450c;
@@ -943,7 +944,7 @@ ul {
    border: none;
    font-family: Mulish;
    font-size: 1.6rem;
-   line-height: 4.0rem;
+   line-height: 2.5;
    font-weight: 800;
    text-transform: uppercase;
    letter-spacing: 0.04em;
@@ -962,7 +963,7 @@ ul {
    align-self: center;
    font-family: Mulish;
    font-size: 1.3rem;
-   line-height: 3.5rem;
+   line-height: 2.7;
    font-weight: 400;
    letter-spacing: 0.02em;
    color: #af8a82;
@@ -1005,37 +1006,41 @@ ul {
    width: 50px;
    font-family: Mulish;
    font-size: 1.6rem;
-   line-height: 4.0rem;
+   line-height: 2.5;
    font-weight: 400;
    letter-spacing: -0.02em;
    color: #ffffff;
 }
 
 
+@media screen and (max-width: 1500px) {
+
+   .header__top {
+      padding: 75px 0 30px;
+   }
+
+   .header__navigation {
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-top: 110px;
+   }
+
+}
+
 
 
 @media screen and (max-width: 768px) {
-
-   /* html,
-   body {
-      font-size: 9px;
-   } */
-
-   .header {
-      background-size: 1820px;
-      background-position: top;
-   }
 
    .header__burger-btn {
       display: block;
    }
 
    .header__top {
-      margin-bottom: 125px;
+      margin-bottom: 170px;
    }
 
    .header__navigation {
-      display: none;
+      /* display: none; */
       position: fixed;
       top: 0;
       right: 0;
@@ -1062,11 +1067,11 @@ ul {
    }
 
    .header__logo {
-      top: 125px;
+      top: 100px;
    }
 
    .smoothies__container {
-      padding: 20px 25px 100px;
+      padding: 50px 25px 130px;
    }
 
    .smoothies__title {
@@ -1094,7 +1099,7 @@ ul {
    }
 
    .about__right-block {
-      margin: 0 auto;
+      margin-right: auto;
    }
 
    .about__title--green::after {
@@ -1109,7 +1114,7 @@ ul {
    }
 
    .story__container {
-      padding: 10px 30px 80px;
+      padding: 10px 30px 75px;
    }
 
 
@@ -1126,7 +1131,7 @@ ul {
    }
 
    .testimonials__container {
-      padding: 115px 30px 80px;
+      padding: 115px 30px 75px;
    }
 
    .testimonials__wrap::after {
@@ -1150,8 +1155,12 @@ ul {
       margin-bottom: 15px;
    }
 
+   .testimonials__text {
+      margin-bottom: 20px;
+   }
+
    .testimonials__paragraph {
-      margin: 75px 0;
+      margin: 75px 0 85px;
    }
 
    .blog__container {
@@ -1172,7 +1181,7 @@ ul {
    }
 
    .blog__right-block {
-      padding: 35px 0;
+      padding: 25px 0;
    }
 
    .footer__container {
@@ -1206,20 +1215,11 @@ ul {
 }
 
 
-
-
-
-
-
 @media screen and (max-width: 360px) {
 
    html,
    body {
       font-size: 9px;
-   }
-
-   .header {
-      background-size: 1100px;
    }
 
    .header__burger-btn {
@@ -1279,12 +1279,12 @@ ul {
    }
 
    .smoothies__title {
-      margin: 0 0 25px;
+      margin: 0 0 20px;
       text-align: center;
    }
 
    .smoothies__container {
-      padding: 50px 20px 50px;
+      padding: 35px 20px 50px;
    }
 
    .smoothies__wrap {
@@ -1334,7 +1334,7 @@ ul {
       min-width: 300px;
    }
 
-   .products__img-wrap {
+   .products__img {
       width: 33%;
    }
 
@@ -1343,7 +1343,7 @@ ul {
    }
 
    .story__title {
-      margin: 0 0 25px;
+      margin: 0 0 20px;
    }
 
    .story__content {
