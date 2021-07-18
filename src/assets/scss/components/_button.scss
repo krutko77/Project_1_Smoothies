@@ -1,0 +1,42 @@
+.btn {
+   position: relative;
+   height: 60px;
+   border-radius: 35px;
+   padding: 0 30px;
+   box-sizing: border-box;
+   font-family: Mulish;
+   font-size: calc(16px + 5 * (100vw / 1980));
+   line-height: 1.2;
+   color: #ffffff;
+   font-weight: 800;
+}
+
+.btn--green {
+   display: flex;
+   align-items: center;
+}
+
+.btn--green::after {
+   content: "";
+   position: absolute;
+   right: 40px;
+   width: 30px;
+   height: 16px;
+   background: url('./../images/arrow-yellow.png') no-repeat;
+}
+
+.btn--green:hover::after {
+   transform: translateX(10px);
+   -webkit-transform: translateX(10px);
+   -moz-transform: translateX(10px);
+   -ms-transform: translateX(10px);
+   -o-transform: translateX(10px);
+}
+
+.btn--green:active {
+   transform: translate(1px, 2px);
+   -webkit-transform: translate(1px, 2px);
+   -moz-transform: translate(1px, 2px);
+   -ms-transform: translate(1px, 2px);
+   -o-transform: translate(1px, 2px);
+}

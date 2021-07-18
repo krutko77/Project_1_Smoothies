@@ -1,0 +1,34 @@
+.personal__list {
+   display: flex;
+   padding: 0;
+   margin-right: 140px;
+}
+
+.personal__item {
+   margin-right: 45px;
+}
+
+.personal__item:last-child {
+   margin-right: 0;
+}
+
+.personal__count {
+   position: relative;
+}
+
+.personal__count-number {
+   position: absolute;
+   top: -10px;
+   left: 25px;
+   width: 18px;
+   height: 18px;
+   background-color: white;
+   border-radius: 9px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   -ms-border-radius: 9px;
+   -o-border-radius: 9px;
+   font-size: 10px;
+   line-height: 18px;
+   text-align: center;
+}

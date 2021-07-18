@@ -1,0 +1,21 @@
+.menu__list {
+   display: flex;
+   justify-content: flex-start;
+   padding: 0;
+}
+
+.menu__item {
+   margin-right: 35px;
+   font-family: Mulish;
+   font-size: calc(14px + 2 * (100vw / 1980));
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.menu__item:last-child {
+   margin-right: 0;
+}
+
+.menu__link {
+   color: #ffffff;
+}

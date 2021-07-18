@@ -1,0 +1,33 @@
+@media screen and (max-width: 1274px) {
+
+   .about__btn .blog__container {
+      max-width: 740px;
+      padding: 100px 30px 100px;
+   }
+
+   .story {
+      padding: 10px 70px 75px;
+   }
+
+   .story__content {
+      padding-top: 50px;
+   }
+
+   .story__img-wrap {
+      margin: 0 auto;
+   }
+
+   .blog__img-wrap::after {
+      display: none;
+   }
+
+   .blog__wrap-img {
+      max-width: 738px;
+      margin: 0;
+   }
+
+   .blog__right-block {
+      padding: 25px 0;
+   }
+
+}

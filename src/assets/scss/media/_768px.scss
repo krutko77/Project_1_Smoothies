@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+
+   .header__burger-btn {
+      display: block;
+   }
+
+   .header__top {
+      margin-bottom: 160px;
+   }
+
+   .header__navigation {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #0aa566;
+      z-index: 999;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      padding-top: 150px;
+   }
+
+   .menu__list {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu__item {
+      margin: 0 0 50px;
+   }
+
+   .header__right-block {
+      margin-bottom: 100px;
+   }
+
+   .header__logo {
+      top: 100px;
+   }
+
+   .about__right-block {
+      max-width: 660px;
+   }
+
+   .smoothies {
+      padding: 50px 0 60px;
+   }
+
+   .smoothies__title {
+      margin: 0 0 25px;
+   }
+
+   .smoothies__text {
+      margin: 0 0 40px;
+   }
+
+   .smoothies__grid {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .grid__item {
+      padding: 30px 35px 35px;
+   }
+
+   .story {
+      padding: 10px 0 75px;
+   }
+
+   .story__content {
+      padding-top: 40px;
+   }
+
+   .story__img-wrap::after {
+      display: none;
+   }
+
+}

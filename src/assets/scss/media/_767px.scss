@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+
+   .testimonials__personal {
+      padding: 0;
+   }
+
+   .testimonials__personal::after {
+      display: none;
+   }
+
+   .footer__container {
+      padding: 0 15px 10px;
+   }
+
+   .footer__payment {
+      width: 265px;
+   }
+
+}

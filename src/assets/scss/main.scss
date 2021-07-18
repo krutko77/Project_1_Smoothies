@@ -1,0 +1,64 @@
+@import './_normalize';
+
+html,
+body {
+   font-family: 'Mulish', sans-serif;
+   font-size: 10px;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.container {
+   max-width: 1780px;
+   padding: 0 30px;
+   margin: 0 auto;
+}
+
+.text {
+   font-family: Mulish;
+   font-size: calc(16px + 2 * (100vw / 1980));
+   line-height: 2.0;
+   font-weight: 400;
+   color: #1e1e1e;
+}
+
+.title {
+   font-family: Mulish;
+   font-size: calc(30px + 20 * (100vw / 1980));
+   line-height: 1.2;
+   font-weight: 800;
+   color: #f7ae3b;
+   letter-spacing: -0.02em;
+}
+
+@import './layout/header';
+@import './layout/menu';
+@import './components/button';
+@import './personal';
+@import './social';
+@import './layout/smoothies';
+@import './layout/grid';
+@import './layout/about';
+@import './layout/products';
+@import './layout/story';
+@import './layout/testimonials';
+@import './layout/blog';
+@import './layout/instagram';
+@import './layout/footer';
+@import './media/1795px';
+@import './media/1499px';
+@import './media/1274px';
+@import './media/_1120px';
+@import './media/_1044px';
+@import './media/768px';
+@import './media/767px';
+@import './media/_570px';
+@import './media/_400px';
+@import './media/_360px';

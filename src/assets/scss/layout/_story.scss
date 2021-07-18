@@ -1,0 +1,46 @@
+.story {
+   padding: 120px 0 160px;
+}
+
+.story__wrap {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.story__content {
+   align-self: center;
+   margin-right: 200px;
+}
+
+.story__title {
+   margin: 0 0 30px;
+}
+
+.story__text {
+   max-width: 515px;
+   margin-bottom: 50px;
+}
+
+.story__btn {
+   width: 300px;
+   background-color: #0aa566;
+}
+
+.story__img-wrap {
+   position: relative;
+}
+
+.story__img {
+   width: 100%;
+}
+
+.story__img-wrap::after {
+   content: "";
+   position: absolute;
+   top: 20px;
+   left: -165px;
+   width: 290px;
+   height: 216px;
+   background: url('./../images/story_stamp.png') no-repeat;
+}

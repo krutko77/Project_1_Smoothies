@@ -1,0 +1,22 @@
+.grid__item {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+   margin: 0;
+   background: white;
+   padding: 15px 35px 35px;
+}
+
+.grid__img {
+   margin-bottom: 20px;
+}
+
+.grid__caption {
+   font-family: Mulish;
+   font-size: calc(15px + 10 * (100vw / 1980));
+   line-height: 1.6;
+   font-weight: 800;
+   color: #f2612d;
+   letter-spacing: -0.02em;
+}

@@ -1,0 +1,29 @@
+@media screen and (max-width: 1795px) {
+
+   .about__img {
+      right: 35px;
+   }
+
+   .about__title--green::after {
+      width: 100%;
+      right: 0px;
+   }
+
+   .footer__header-wrap {
+      justify-content: space-around;
+   }
+
+   .footer__logo {
+      margin: 65px 5px 0 0;
+   }
+
+   .footer__information {
+      margin-right: 100px;
+   }
+
+   .footer__central-block {
+      justify-content: flex-end;
+      width: 640px;
+      margin-right: 70px;
+   }
+}
