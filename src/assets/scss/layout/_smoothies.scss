@@ -3,9 +3,8 @@
 }
 
 .smoothies__wrap {
-   display: flex;
+   @include flexCenter;
    flex-direction: column;
-   align-items: center;
 }
 
 .smoothies__title {

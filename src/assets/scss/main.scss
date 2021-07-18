@@ -1,4 +1,6 @@
-@import './_normalize';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+@import './normalize';
 
 html,
 body {
@@ -38,9 +40,9 @@ ul {
    letter-spacing: -0.02em;
 }
 
+@import './components/button';
 @import './layout/header';
 @import './layout/menu';
-@import './components/button';
 @import './personal';
 @import './social';
 @import './layout/smoothies';

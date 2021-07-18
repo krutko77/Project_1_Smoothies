@@ -6,6 +6,7 @@
 .about__wrap {
    display: flex;
    justify-content: center;
+   margin-bottom: -18px;
 }
 
 .about__img {
@@ -43,11 +44,10 @@
 }
 
 .about__list {
-   font-family: Mulish;
+   @include fontWhite;
    font-size: calc(18px + 3 * (100vw / 1980));
    line-height: 2.1;
    font-weight: 400;
-   color: #ffffff;
    padding-left: 25px;
    margin-bottom: 40px;
    list-style-image: ('./../images/icons/about.png');

@@ -20,12 +20,11 @@
 }
 
 .footer__subtitle {
-   font-family: Mulish;
+   @include fontWhite;
    font-size: calc(24px + 2 * (100vw / 1980));
    line-height: 1.5;
    font-weight: 800;
    letter-spacing: -0.02em;
-   color: #ffffff;
    margin: 0 0 20px;
 }
 
@@ -75,7 +74,6 @@
 
 .footer__form-input {
    width: 495px;
-   /* width: 25.8vw; */
    height: 60px;
    border-radius: 30px;
    border: none;

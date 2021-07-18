@@ -1,14 +1,16 @@
 .btn {
    position: relative;
    height: 60px;
-   border-radius: 35px;
+   border-radius: $border-radius;
    padding: 0 30px;
-   box-sizing: border-box;
-   font-family: Mulish;
+   @include fontWhite;
    font-size: calc(16px + 5 * (100vw / 1980));
    line-height: 1.2;
-   color: #ffffff;
    font-weight: 800;
+   -webkit-border-radius: $border-radius;
+   -moz-border-radius: $border-radius;
+   -ms-border-radius: $border-radius;
+   -o-border-radius: $border-radius;
 }
 
 .btn--green {

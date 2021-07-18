@@ -1,0 +1,9 @@
+@mixin fontWhite {
+   font-family: Mulish;
+   color: #ffffff;
+}
+
+@mixin flexCenter {
+   display: flex;
+   align-items: center;
+}
