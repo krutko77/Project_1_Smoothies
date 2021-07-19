@@ -1,6 +1,8 @@
+@import './base/normalize';
+
 @import './abstracts/variables';
 @import './abstracts/mixins';
-@import './normalize';
+
 
 html,
 body {
@@ -17,42 +19,22 @@ ul {
    list-style-type: none;
 }
 
-.container {
-   max-width: 1780px;
-   padding: 0 30px;
-   margin: 0 auto;
-}
-
-.text {
-   font-family: Mulish;
-   font-size: calc(16px + 2 * (100vw / 1980));
-   line-height: 2.0;
-   font-weight: 400;
-   color: #1e1e1e;
-}
-
-.title {
-   font-family: Mulish;
-   font-size: calc(30px + 20 * (100vw / 1980));
-   line-height: 1.2;
-   font-weight: 800;
-   color: #f7ae3b;
-   letter-spacing: -0.02em;
-}
-
+@import './components/common/container';
+@import './components/common/text';
+@import './components/common/title';
 @import './components/button';
 @import './layout/header';
 @import './layout/menu';
-@import './personal';
-@import './social';
-@import './layout/smoothies';
+@import './section/personal';
+@import './section/social';
+@import './section/smoothies';
 @import './layout/grid';
-@import './layout/about';
-@import './layout/products';
-@import './layout/story';
-@import './layout/testimonials';
-@import './layout/blog';
-@import './layout/instagram';
+@import './section/about';
+@import './section/products';
+@import './section/story';
+@import './section/testimonials';
+@import './section/blog';
+@import './section/instagram';
 @import './layout/footer';
 @import './media/1795px';
 @import './media/1499px';
@@ -60,7 +42,6 @@ ul {
 @import './media/_1120px';
 @import './media/_1044px';
 @import './media/768px';
-@import './media/767px';
 @import './media/_570px';
 @import './media/_400px';
 @import './media/_360px';

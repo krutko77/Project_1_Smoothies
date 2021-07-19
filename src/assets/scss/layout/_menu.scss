@@ -1,17 +1,19 @@
-.menu__list {
-   display: flex;
-   justify-content: flex-start;
-   padding: 0;
-}
+.menu {
+   &__list {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+   }
 
-.menu__item {
-   margin-right: 35px;
-   @include fontWhite;
-   font-size: calc(14px + 2 * (100vw / 1980));
-   font-weight: 700;
-   text-transform: uppercase;
-}
+   &__item {
+      margin-right: 35px;
+      @include font(Mulish, #e91337);
+      font-size: calc(14px + 2 * (100vw / 1980));
+      font-weight: 700;
+      text-transform: uppercase;
 
-.menu__item:last-child {
-   margin-right: 0;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
 }

@@ -1,3 +1,10 @@
 $main_color-btn:#0aa566;
 $alternative_color-btn: #2312E1;
 $border-radius: 35px;
+
+
+%flexCenter {
+   display: flex;
+   align-items: center;
+}
+
