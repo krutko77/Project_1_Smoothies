@@ -1,5 +1,6 @@
-@mixin font ($fontFamily: Mulish, $color: #ffff){
+@mixin fontz ($fontFamily, $color){
    font-family: $fontFamily;
    color: $color;
 }
+
 

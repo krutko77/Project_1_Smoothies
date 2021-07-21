@@ -7,7 +7,7 @@
 
    &__item {
       margin-right: 35px;
-      @include font(Mulish, #e91337);
+      @include fontz(Mulish, #ffff);
       font-size: calc(14px + 2 * (100vw / 1980));
       font-weight: 700;
       text-transform: uppercase;

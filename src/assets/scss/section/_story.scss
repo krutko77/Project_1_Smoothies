@@ -1,0 +1,46 @@
+.story {
+   padding: 120px 0 160px;
+
+   &__wrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   &__content {
+      align-self: center;
+      margin-right: 200px;
+   }
+
+   &__title {
+      margin: 0 0 30px;
+   }
+
+   &__text {
+      max-width: 515px;
+      margin-bottom: 50px;
+   }
+
+   &__btn {
+      width: 300px;
+      background-color: $main_color-btn;
+   }
+
+   &__img-wrap {
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 20px;
+         left: -165px;
+         width: 290px;
+         height: 216px;
+         background: url('./../images/story_stamp.png') no-repeat;
+      }
+   }
+
+   &__img {
+      width: 100%;
+   }
+}

@@ -1,0 +1,26 @@
+.smoothies {
+   padding: 90px 30px 125px;
+
+   &__wrap {
+      @extend %flexCenter;
+      flex-direction: column;
+   }
+
+   &__title {
+      margin: 0 0 30px;
+      text-align: center;
+   }
+
+   &__text {
+      max-width: 910px;
+      text-align: center;
+      margin: 0 0 65px;
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      background: #9ca2a2;
+      gap: 2px;
+   }
+}
