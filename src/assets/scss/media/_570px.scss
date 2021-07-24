@@ -10,6 +10,28 @@
       padding: 0 30px;
    }
 
+   .menu__list {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .menu__item {
+      margin: 0px 0 30px;
+   }
+
+   .header__right-block {
+      flex-direction: column;
+      margin-bottom: 50px;
+   }
+
+   .personal__list {
+      margin: 0 0 20px;
+   }
+
+   .header__personal::after {
+      display: none;
+   }
+
    .about__title {
       margin: 0 0 30px;
    }

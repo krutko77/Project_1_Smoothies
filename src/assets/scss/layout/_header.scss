@@ -3,6 +3,7 @@
    background: url('./../images/header_bg_img.jpg') no-repeat;
    background-size: cover;
    background-position: center;
+   position: relative;
 
    &__top {
       position: relative;
@@ -25,6 +26,15 @@
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
       z-index: 9999;
+      cursor: pointer;
+
+      &:active {
+         transform: translate(1px, 2px);
+         -webkit-transform: translate(1px, 2px);
+         -moz-transform: translate(1px, 2px);
+         -ms-transform: translate(1px, 2px);
+         -o-transform: translate(1px, 2px);
+      }
    }
 
    &__burger-btn-icon {

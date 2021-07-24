@@ -56,8 +56,9 @@ const jsFiles = [
     srcPath + 'assets/js/lib.js',
     srcPath + 'assets/js/main.js',
     srcPath + 'assets/js/wow.js',
-    srcPath + 'assets/js/vanilla-tilt.js'
-]
+    srcPath + 'assets/js/vanilla-tilt.js',
+    srcPath + 'assets/js/burger-menu.js'
+   ]
 
 
 // TASKS

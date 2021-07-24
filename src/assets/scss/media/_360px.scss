@@ -9,34 +9,6 @@
       margin-bottom: 130px;
    }
 
-   .header__navigation {
-      padding-top: 90px;
-   }
-
-   .menu__list {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .menu__item {
-      margin: 0px 0 30px;
-   }
-
-   .header__right-block {
-      flex-direction: column;
-      margin-bottom: 50px;
-   }
-
-   .personal__list {
-      margin: 0 0 20px;
-   }
-
-   .header__personal::after {
-      display: none;
-      top: 0;
-      left: 0;
-   }
-
    .header__logo {
       top: 100px;
    }
