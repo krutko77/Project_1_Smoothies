@@ -19,6 +19,25 @@ ul {
    list-style-type: none;
 }
 
+a .logo__link {
+   transition: transform 500ms ease;
+   -webkit-transition: transform 500ms ease;
+   -moz-transition: transform 500ms ease;
+   -ms-transition: transform 500ms ease;
+   -o-transition: transform 500ms ease;
+}
+
+a .logo__link:hover {
+   transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   -o-transform: scale(1.2);
+
+}
+
+@import './animate.scss';
+
 @import './components/common/container';
 @import './components/common/text';
 @import './components/common/title';
