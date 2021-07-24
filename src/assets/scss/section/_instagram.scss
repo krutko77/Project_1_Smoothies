@@ -20,6 +20,10 @@
       letter-spacing: -0.02em;
       color: #0aa566;
 
+      &:hover {
+         opacity: 0.7;
+      }
+
       &::before {
          content: "";
          position: absolute;

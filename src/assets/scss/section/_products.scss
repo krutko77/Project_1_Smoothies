@@ -11,27 +11,28 @@
       flex: 0 1 25%;
       padding: 130px 0 75px;
       min-width: 320px;
+
+      &--сhocolate {
+         background: url('./../images/products_bg_1.png');
+      }
+
+      &--vegan {
+         background: url('./../images/products_bg_2.png');
+      }
+
+      &--lemon {
+         background: url('./../images/products_bg_3.png');
+      }
+
+      &--turmeric {
+         background: url('./../images/products_bg_4.png');
+      }
    }
 
-   &__item--сhocolate {
-      background: url('./../images/products_bg_1.png');
-   }
-
-   &__item--vegan {
-      background: url('./../images/products_bg_2.png');
-   }
-
-   &__item--lemon {
-      background: url('./../images/products_bg_3.png');
-   }
-
-   &__item--turmeric {
-      background: url('./../images/products_bg_4.png');
-   }
 
    &__img {
       margin-bottom: 30px;
-   C}
+   }
 
    &__title {
       font-size: calc(22px + 2 * (100vw / 1980));
@@ -49,8 +50,7 @@
    &__title,
    &__caption,
    &__btn {
-      font-family: Mulish;
-      color: #ffffff;
+      @include fontz(Mulish, #ffff);
    }
 
    &__btn {
@@ -60,6 +60,10 @@
       border: solid 2px #ffffff;
       border-radius: 30px;
       padding-right: 125px;
+
+      &:hover {
+         opacity: 0.7;
+      }
 
       &::after {
          content: "";
