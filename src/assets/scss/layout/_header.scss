@@ -10,43 +10,92 @@
       margin-bottom: 40px;
    }
 
-   &__burger-btn {
-      background-color: $main_color-btn;
-      display: none;
-      border: none;
-      width: 50px;
-      padding: 3px;
-      position: fixed;
-      top: 40px;
-      right: 30px;
-      border-radius: 8px;
-      -webkit-border-radius: 8px;
-      -moz-border-radius: 8px;
-      -ms-border-radius: 8px;
-      -o-border-radius: 8px;
-      z-index: 9999;
-      cursor: pointer;
+   // &__burger-btn {
+   //    background-color: $main_color-btn;
+   //    display: none;
+   //    border: none;
+   //    width: 50px;
+   //    padding: 3px;
+   //    position: fixed;
+   //    top: 40px;
+   //    right: 30px;
+   //    border-radius: 8px;
+   //    -webkit-border-radius: 8px;
+   //    -moz-border-radius: 8px;
+   //    -ms-border-radius: 8px;
+   //    -o-border-radius: 8px;
+   //    z-index: 9999;
+   //    cursor: pointer;
 
-      &:active {
-         transform: translate(1px, 2px);
-         -webkit-transform: translate(1px, 2px);
-         -moz-transform: translate(1px, 2px);
-         -ms-transform: translate(1px, 2px);
-         -o-transform: translate(1px, 2px);
-      }
-   }
+   //    &:active {
+   //       transform: translate(1px, 2px);
+   //       -webkit-transform: translate(1px, 2px);
+   //       -moz-transform: translate(1px, 2px);
+   //       -ms-transform: translate(1px, 2px);
+   //       -o-transform: translate(1px, 2px);
+   //    }
+   // }
 
-   &__burger-btn-icon {
-      max-width: 100%;
-   }
+   // &__burger-btn-icon {
+   //    max-width: 100%;
+   // }
 
-   &__navigation {
+   &__menu {
       @extend %flexCenter;
       justify-content: space-between;
       flex-wrap: wrap;
    }
 
-   &__menu {
+   &__menu-icon {
+      display: none;
+   }   
+
+   &__menu-icon._active {
+      span {
+         transform: scale(0);
+      }
+
+      &::before {
+         transform: rotate(-45deg);
+         top: calc(50% - 1px);
+      }
+
+      &::after {
+         transform: rotate(45deg);
+         bottom: calc(50% - 1px);
+      }
+   }
+
+   .menu {
+      &__list {
+         display: flex;
+         justify-content: flex-start;
+         padding: 0;
+      }
+   
+      &__item {
+         margin-right: 35px;
+         @include font(Mulish, #ffff);
+         font-size: calc(14px + 2 * (100vw / 1980));
+         font-weight: 700;
+         text-transform: uppercase;
+         transition: color 0.2s ease;
+         -webkit-transition: color 0.2s ease;
+         -moz-transition: color 0.2s ease;
+         -ms-transition: color 0.2s ease;
+         -o-transition: color 0.2s ease;
+   
+         &:hover {
+            text-decoration: underline;
+         }
+   
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+   }
+
+   &__body {
       padding: 10px 0;
    }
 
