@@ -19,7 +19,7 @@ ul {
    list-style-type: none;
 }
 
-a .logo__link {
+.logo__img {
    transition: transform 500ms ease;
    -webkit-transition: transform 500ms ease;
    -moz-transition: transform 500ms ease;
@@ -27,7 +27,7 @@ a .logo__link {
    -o-transition: transform 500ms ease;
 }
 
-a .logo__link:hover {
+.logo__img:hover {
    transform: scale(1.2);
    -webkit-transform: scale(1.2);
    -moz-transform: scale(1.2);

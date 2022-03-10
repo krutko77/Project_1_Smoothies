@@ -44,7 +44,7 @@
 
    &__list {
       list-style-image: url('./../images/icons/about.png');
-      @include fontz (Mulish, #ffff);
+      @include font (Mulish, #ffff);
       font-size: calc(18px + 3 * (100vw / 1980));
       line-height: 2.1;
       font-weight: 400;

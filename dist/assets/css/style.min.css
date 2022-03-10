@@ -2345,14 +2345,14 @@ a {
 ul {
   list-style-type: none; }
 
-a .logo__link {
+.logo__img {
   transition: transform 500ms ease;
   -webkit-transition: transform 500ms ease;
   -moz-transition: transform 500ms ease;
   -ms-transition: transform 500ms ease;
   -o-transition: transform 500ms ease; }
 
-a .logo__link:hover {
+.logo__img:hover {
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
@@ -4488,8 +4488,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%); }
-    .header__logo:hover {
-      opacity: 0.8; }
   .header__right-block {
     max-width: 420px;
     padding: 10px 0; }
@@ -4530,7 +4528,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -ms-transition: color 0.2s ease;
   -o-transition: color 0.2s ease; }
   .menu__item:hover {
-    color: #BD719F; }
+    text-decoration: underline; }
   .menu__item:last-child {
     margin-right: 0; }
 
@@ -4983,8 +4981,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .footer__logo {
   margin: 65px 15.3vw 0 0; }
-  .footer__logo:hover {
-    opacity: 0.8; }
 
 .footer__central-block {
   display: flex;

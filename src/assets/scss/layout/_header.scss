@@ -58,13 +58,9 @@
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
-
-      &:hover {
-         opacity: 0.8;
-      }
+      -o-transform: translateX(-50%);      
    }
-
+   
    &__right-block {
       max-width: 420px;
       @extend %flexCenter;

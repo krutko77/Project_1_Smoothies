@@ -7,7 +7,7 @@
 
    &__item {
       margin-right: 35px;
-      @include fontz(Mulish, #ffff);
+      @include font(Mulish, #ffff);
       font-size: calc(14px + 2 * (100vw / 1980));
       font-weight: 700;
       text-transform: uppercase;
@@ -18,7 +18,7 @@
       -o-transition: color 0.2s ease;
 
       &:hover {
-         color: #BD719F;
+         text-decoration: underline;
       }
 
       &:last-child {

@@ -3,7 +3,7 @@
    height: 60px;
    border-radius: $border-radius;
    padding: 0 30px;
-   @include fontz(Mulish, #ffff);
+   @include font(Mulish, #ffff);
    font-size: calc(16px + 5 * (100vw / 1980));
    line-height: 1.2;
    font-weight: 800;
