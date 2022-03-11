@@ -4430,7 +4430,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       height: 16px;
       background: url("./../images/arrow-yellow.png") no-repeat; }
     .btn--green:hover {
-      background-color: #0ab36e; }
+      background-color: #19967D; }
     .btn--green:hover::after {
       transform: translateX(10px);
       -webkit-transform: translateX(10px);
@@ -5211,7 +5211,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     top: 50px; }
   .about__img {
     right: auto; }
-  .grid__item {
+  .about__right-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .smoothies .grid__item {
     padding: 15px 5px 35px; }
   .story__content {
     margin: 0 100px 70px 0; }
@@ -5307,8 +5311,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 20px; }
   .header .social__item {
     margin-right: 30px; }
-  .about__right-block {
-    max-width: 660px; }
   .smoothies {
     padding: 50px 0 60px; }
     .smoothies__title {
@@ -5346,6 +5348,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-bottom: 50px; }
   .header__personal::after {
     display: none; }
+  .header__top {
+    margin-bottom: 120px; }
   .header .menu__list {
     flex-direction: column;
     align-items: center; }
@@ -5361,8 +5365,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin: 0 auto; }
   .about__btn.btn--green::after {
     right: 25px; }
-  .btn--green::after {
-    right: 30px; }
   .smoothies {
     padding: 50px 0 60px; }
     .smoothies__title {
@@ -5439,8 +5441,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .header__burger-btn {
     top: 20px;
     right: 20px; }
-  .header__top {
-    margin-bottom: 130px; }
   .header__logo {
     top: 100px; }
   .products__item {

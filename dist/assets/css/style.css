@@ -347,7 +347,7 @@ template {
     display: none;
 }
 
-.header__menu, .header__right-block, .smoothies__wrap, .grid__item, .products__item, .testimonials__wrap, .testimonials__paragraph {
+.header__menu, .header__right-block, .smoothies__wrap, .smoothies .grid__item, .products__item, .testimonials__wrap, .testimonials__paragraph {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
@@ -2984,7 +2984,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    transition: color 0.2s ease;
+    transition: opacity 0.2s ease;
     -webkit-transition: color 0.2s ease;
     -moz-transition: color 0.2s ease;
     -ms-transition: color 0.2s ease;
@@ -3001,7 +3001,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .btn--green:hover {
-    background-color: #0ab36e;
+    opacity: 0.7;
 }
 
 .btn--green:hover::after {
@@ -3217,7 +3217,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     gap: 2px;
 }
 
-.grid__item {
+.smoothies .grid__item {
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: end;
@@ -3227,11 +3227,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     padding: 15px 35px 35px;
 }
 
-.grid__img {
+.smoothies .grid__img {
     margin-bottom: 20px;
 }
 
-.grid__caption {
+.smoothies .grid__caption {
     font-family: Mulish;
     font-size: calc(15px + 10 * (100vw / 1980));
     line-height: 1.6;
@@ -4329,22 +4329,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         transition: all 0.5s;
     }
 
-    .header__menu .menu__list {
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .header__menu .menu__item {
-        margin: 0 0 40px;
-        font-size: 20px;
-    }
-
-    .header__menu .social__item {
-        margin-right: 30px;
-    }
-
     .header__menu._active {
         position: fixed;
         left: 0;
@@ -4356,6 +4340,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .header__logo {
         top: 100px;
+    }
+
+    .header .menu__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .header .menu__item {
+        margin: 0 0 40px;
+        font-size: 20px;
+    }
+
+    .header .social__item {
+        margin-right: 30px;
     }
 
     .about__right-block {
@@ -4378,7 +4378,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         grid-template-columns: 1fr 1fr;
     }
 
-    .grid__item {
+    .smoothies .grid__item {
         padding: 30px 35px 35px;
     }
 
@@ -4402,11 +4402,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         display: none;
     }
 
-    .footer__container {
+    .footer .footer__container {
         padding: 0 15px 10px;
     }
 
-    .footer__payment {
+    .footer .footer__payment {
         width: 265px;
     }
 }

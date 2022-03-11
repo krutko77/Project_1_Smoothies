@@ -16,10 +16,18 @@
       &__img {
          right: auto;
       }
+
+      &__right-block {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
    }
 
-   .grid__item {
-      padding: 15px 5px 35px;
+   .smoothies {
+      .grid__item {
+         padding: 15px 5px 35px;
+      }
    }
 
    .story {

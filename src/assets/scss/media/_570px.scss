@@ -20,6 +20,10 @@
          display: none;
       }
 
+      &__top {
+         margin-bottom: 120px;
+      }
+
       .menu__list {
          flex-direction: column;
          align-items: center;
@@ -48,10 +52,6 @@
       &__btn.btn--green::after {
          right: 25px;
       }
-   }
-
-   .btn--green::after {
-      right: 30px;
    }
 
    .smoothies {
