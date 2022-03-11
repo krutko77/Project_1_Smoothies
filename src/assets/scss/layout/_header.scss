@@ -10,36 +10,6 @@
       margin-bottom: 40px;
    }
 
-   // &__burger-btn {
-   //    background-color: $main_color-btn;
-   //    display: none;
-   //    border: none;
-   //    width: 50px;
-   //    padding: 3px;
-   //    position: fixed;
-   //    top: 40px;
-   //    right: 30px;
-   //    border-radius: 8px;
-   //    -webkit-border-radius: 8px;
-   //    -moz-border-radius: 8px;
-   //    -ms-border-radius: 8px;
-   //    -o-border-radius: 8px;
-   //    z-index: 9999;
-   //    cursor: pointer;
-
-   //    &:active {
-   //       transform: translate(1px, 2px);
-   //       -webkit-transform: translate(1px, 2px);
-   //       -moz-transform: translate(1px, 2px);
-   //       -ms-transform: translate(1px, 2px);
-   //       -o-transform: translate(1px, 2px);
-   //    }
-   // }
-
-   // &__burger-btn-icon {
-   //    max-width: 100%;
-   // }
-
    &__menu {
       @extend %flexCenter;
       justify-content: space-between;
@@ -69,14 +39,14 @@
    .menu {
       &__list {
          display: flex;
-         justify-content: flex-start;
          padding: 0;
       }
    
       &__item {
-         margin-right: 35px;
+         margin: 0 35px 0 0;
          @include font(Mulish, #ffff);
-         font-size: calc(14px + 2 * (100vw / 1980));
+         // font-size: calc(14px + 2 * (100vw / 1980));
+         font-size: 14px;
          font-weight: 700;
          text-transform: uppercase;
          transition: color 0.2s ease;
@@ -111,7 +81,7 @@
    }
    
    &__right-block {
-      max-width: 420px;
+      // max-width: 420px;
       @extend %flexCenter;
       padding: 10px 0;
    }
@@ -128,6 +98,68 @@
       width: 47px;
       height: 2px;
       background: url('./../images/header_line.png') no-repeat;
+   }
+
+   .personal {
+
+      &__list {
+         display: flex;
+         padding: 0;
+         margin-right: 140px;
+      }
+   
+      &__item {
+         margin-right: 45px;
+   
+         &:last-child {
+            margin-right: 0;
+         }
+        
+      }
+   
+      &__link:hover {
+         opacity: 0.6;
+      }
+   
+      &__count {
+         position: relative;
+      }
+   
+      &__count-number {
+         position: absolute;
+         top: -10px;
+         left: 25px;
+         width: 18px;
+         height: 18px;
+         background-color: white;
+         border-radius: 9px;
+         -webkit-border-radius: 9px;
+         -moz-border-radius: 9px;
+         -ms-border-radius: 9px;
+         -o-border-radius: 9px;
+         font-size: 10px;
+         line-height: 18px;
+         text-align: center;
+      }
+   }
+
+   .social {
+      &__list {
+         display: flex;
+         padding: 0;
+      }
+   
+      &__item {
+         margin-right: 10px;
+   
+         &:last-child {
+            margin-right: 0;
+         }
+   
+         &:hover {
+            opacity: 0.7;
+         }
+      }
    }
 
    &__btn {

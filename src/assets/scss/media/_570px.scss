@@ -4,50 +4,54 @@
       padding: 0 15px;
    }
 
-   .header__btn {
-      width: 250px;
-      height: 60px;
-      padding: 0 30px;
-   }
+   .header {
+      &__btn {
+         width: 250px;
+         height: 60px;
+         padding: 0 30px;
+      }
 
-   .menu__list {
-      flex-direction: column;
-      align-items: center;
-   }
+      &__right-block {
+         flex-direction: column;
+         margin-bottom: 50px;
+      }
 
-   .menu__item {
-      margin: 0px 0 30px;
-   }
+      &__personal::after {
+         display: none;
+      }
 
-   .header__right-block {
-      flex-direction: column;
-      margin-bottom: 50px;
-   }
+      .menu__list {
+         flex-direction: column;
+         align-items: center;
+      }
+   
+      .menu__item {
+         margin: 0px 0 30px;
+      }
+   
+      .personal__list {
+         margin: 0 0 20px;
+      }
+   } 
 
-   .personal__list {
-      margin: 0 0 20px;
-   }
+   .about{
+      &__title {
+         margin: 0 0 30px;
+      }
+   
+      &__btn {
+         width: 300px;
+         padding-left: 25px;
+         margin: 0 auto;
+      }
 
-   .header__personal::after {
-      display: none;
+      &__btn.btn--green::after {
+         right: 25px;
+      }
    }
-
-   .about__title {
-      margin: 0 0 30px;
-   }
-
-   .about__btn {
-      width: 300px;
-      padding-left: 25px;
-      margin: 0 auto;
-   }
-
+   
    .btn--green::after {
       right: 30px;
-   }
-
-   .about__btn.btn--green::after {
-      right: 25px;
    }
 
    .smoothies {

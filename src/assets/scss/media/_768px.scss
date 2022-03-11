@@ -1,9 +1,5 @@
 @media screen and (max-width: 768px) {
 
-   // .header__burger-btn {
-   //    display: block;
-   // }
-
    .header__menu-icon {
       display: block;
       position: absolute;
@@ -55,22 +51,27 @@
       z-index: 99;
       flex-direction: column-reverse;
       justify-content: flex-end;
-      padding-top: 150px;
+      padding-top: 100px;
       transition: all 0.5s;
+
+      .menu__list {
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .menu__item {
+         margin: 0 0 40px;
+         font-size: 20px;
+      }
+
+      .social__item {
+         margin-right: 30px;
+      }
    }
 
    .header__menu._active {
       position: fixed;
       left: 0;
-   }
-
-   .menu__list {
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .menu__item {
-      margin: 0 0 50px;
    }
 
    .header__right-block {

@@ -1,10 +1,4 @@
-// const button = document.querySelector('.burgerButton')
-// const block = document.querySelector('.block')
-
-// button.addEventListener('click', function() {
-//    block.classList.toggle('active')
-// })
-
+// бургер меню
 const menuIcon = document.querySelector('.header__menu-icon');
 const headerMenu = document.querySelector('.header__menu');
    if (menuIcon) {      

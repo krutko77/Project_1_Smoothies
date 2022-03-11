@@ -2338,6 +2338,9 @@ body {
   font-family: 'Mulish', sans-serif;
   font-size: 10px; }
 
+body._lock {
+  overflow: hidden; }
+
 a {
   text-decoration: none;
   color: inherit; }
@@ -4465,13 +4468,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     bottom: calc(50% - 1px); }
   .header .menu__list {
     display: flex;
-    justify-content: flex-start;
     padding: 0; }
   .header .menu__item {
-    margin-right: 35px;
+    margin: 0 35px 0 0;
     font-family: Mulish;
     color: #ffff;
-    font-size: calc(14px + 2 * (100vw / 1980));
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     transition: color 0.2s ease;
@@ -4495,7 +4497,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%); }
   .header__right-block {
-    max-width: 420px;
     padding: 10px 0; }
   .header__personal {
     position: relative; }
@@ -4507,6 +4508,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 47px;
     height: 2px;
     background: url("./../images/header_line.png") no-repeat; }
+  .header .personal__list {
+    display: flex;
+    padding: 0;
+    margin-right: 140px; }
+  .header .personal__item {
+    margin-right: 45px; }
+    .header .personal__item:last-child {
+      margin-right: 0; }
+  .header .personal__link:hover {
+    opacity: 0.6; }
+  .header .personal__count {
+    position: relative; }
+  .header .personal__count-number {
+    position: absolute;
+    top: -10px;
+    left: 25px;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    font-size: 10px;
+    line-height: 18px;
+    text-align: center; }
+  .header .social__list {
+    display: flex;
+    padding: 0; }
+  .header .social__item {
+    margin-right: 10px; }
+    .header .social__item:last-child {
+      margin-right: 0; }
+    .header .social__item:hover {
+      opacity: 0.7; }
   .header__btn {
     width: 280px;
     height: 70px;
@@ -4515,49 +4552,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     line-height: 1.2;
     padding: 0 38px;
     margin: 0 auto; }
-
-.personal__list {
-  display: flex;
-  padding: 0;
-  margin-right: 140px; }
-
-.personal__item {
-  margin-right: 45px; }
-  .personal__item:last-child {
-    margin-right: 0; }
-
-.personal__link:hover {
-  opacity: 0.6; }
-
-.personal__count {
-  position: relative; }
-
-.personal__count-number {
-  position: absolute;
-  top: -10px;
-  left: 25px;
-  width: 18px;
-  height: 18px;
-  background-color: white;
-  border-radius: 9px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  -ms-border-radius: 9px;
-  -o-border-radius: 9px;
-  font-size: 10px;
-  line-height: 18px;
-  text-align: center; }
-
-.social__list {
-  display: flex;
-  padding: 0; }
-
-.social__item {
-  margin-right: 10px; }
-  .social__item:last-child {
-    margin-right: 0; }
-  .social__item:hover {
-    opacity: 0.7; }
 
 .smoothies {
   padding: 90px 30px 125px; }
@@ -5299,16 +5293,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     z-index: 99;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    padding-top: 150px;
+    padding-top: 100px;
     transition: all 0.5s; }
+    .header__menu .menu__list {
+      flex-direction: column;
+      align-items: center; }
+    .header__menu .menu__item {
+      margin: 0 0 40px;
+      font-size: 20px; }
+    .header__menu .social__item {
+      margin-right: 30px; }
   .header__menu._active {
     position: fixed;
     left: 0; }
-  .menu__list {
-    flex-direction: column;
-    align-items: center; }
-  .menu__item {
-    margin: 0 0 50px; }
   .header__right-block {
     margin-bottom: 100px; }
   .header__logo {
@@ -5347,28 +5344,28 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     width: 250px;
     height: 60px;
     padding: 0 30px; }
-  .menu__list {
-    flex-direction: column;
-    align-items: center; }
-  .menu__item {
-    margin: 0px 0 30px; }
   .header__right-block {
     flex-direction: column;
     margin-bottom: 50px; }
-  .personal__list {
-    margin: 0 0 20px; }
   .header__personal::after {
     display: none; }
+  .header .menu__list {
+    flex-direction: column;
+    align-items: center; }
+  .header .menu__item {
+    margin: 0px 0 30px; }
+  .header .personal__list {
+    margin: 0 0 20px; }
   .about__title {
     margin: 0 0 30px; }
   .about__btn {
     width: 300px;
     padding-left: 25px;
     margin: 0 auto; }
-  .btn--green::after {
-    right: 30px; }
   .about__btn.btn--green::after {
     right: 25px; }
+  .btn--green::after {
+    right: 30px; }
   .smoothies {
     padding: 50px 0 60px; }
   .smoothies__title {

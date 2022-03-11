@@ -10,6 +10,10 @@ body {
    font-size: 10px;
 }
 
+body._lock {
+   overflow: hidden;
+}
+
 a {
    text-decoration: none;
    color: inherit;
@@ -43,8 +47,6 @@ ul {
 @import './components/common/title';
 @import './components/button';
 @import './layout/header';
-@import './section/personal';
-@import './section/social';
 @import './section/smoothies';
 @import './layout/grid';
 @import './section/about';
