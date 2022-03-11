@@ -1,58 +1,73 @@
 @media screen and (max-width: 768px) {
 
-   .header__menu-icon {
-      display: block;
-      position: absolute;
-      top: 35px;
-      right: 30px;
-      width: 30px;
-      height: 20px;
-      cursor: pointer;
-      z-index: 100;
-      background-color: transparent;
-      border: none;
-
-      span,
-      &::before,
-      &::after {
-         content: "";
-         transition: all 0.3s ease 0s;
-         left: 0px;
+   .header {
+      &__menu-icon {
+         display: block;
          position: absolute;
+         top: 35px;
+         right: 30px;
+         width: 30px;
+         height: 20px;
+         cursor: pointer;
+         z-index: 100;
+         background-color: transparent;
+         border: none;
+
+         span,
+         &::before,
+         &::after {
+            content: "";
+            transition: all 0.3s ease 0s;
+            left: 0px;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+         }
+
+         &::before {
+            top: 0px;
+         }
+
+         &::after {
+            bottom: 0px;
+         }
+
+         span {
+            top: calc(50% - 1px);
+         }
+      }
+
+      &__top {
+         margin-bottom: 160px;
+      }
+
+      &__menu {
+         position: fixed;
+         top: 0;
+         left: -100%;
          width: 100%;
-         height: 2px;
-         background-color: white;
+         height: 100%;
+         background-color: #0aa566;
+         z-index: 99;
+         flex-direction: column-reverse;
+         justify-content: flex-end;
+         padding-top: 100px;
+         transition: all 0.5s;
       }
 
-      &::before {
-         top: 0px;
+      &__menu._active {
+         position: fixed;
+         left: 0;
       }
 
-      &::after {
-         bottom: 0px;
+      &__right-block {
+         margin-bottom: 100px;
       }
 
-      span {
-         top: calc(50% - 1px);
+      &__logo {
+         top: 100px;
       }
-   }
-
-   .header__top {
-      margin-bottom: 160px;
-   }
-
-   .header__menu {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background-color: #0aa566;
-      z-index: 99;
-      flex-direction: column-reverse;
-      justify-content: flex-end;
-      padding-top: 100px;
-      transition: all 0.5s;
 
       .menu__list {
          flex-direction: column;
@@ -69,68 +84,59 @@
       }
    }
 
-   .header__menu._active {
-      position: fixed;
-      left: 0;
-   }
-
-   .header__right-block {
-      margin-bottom: 100px;
-   }
-
-   .header__logo {
-      top: 100px;
-   }
-
    .about__right-block {
       max-width: 660px;
    }
 
    .smoothies {
       padding: 50px 0 60px;
-   }
 
-   .smoothies__title {
-      margin: 0 0 25px;
-   }
+      &__title {
+         margin: 0 0 25px;
+      }
 
-   .smoothies__text {
-      margin: 0 0 40px;
-   }
+      &__text {
+         margin: 0 0 40px;
+      }
 
-   .smoothies__grid {
-      grid-template-columns: 1fr 1fr;
-   }
+      &__grid {
+         grid-template-columns: 1fr 1fr;
+      }
 
-   .grid__item {
-      padding: 30px 35px 35px;
+      .grid__item {
+         padding: 30px 35px 35px;
+      }
    }
 
    .story {
       padding: 10px 0 75px;
+
+      &__content {
+         padding-top: 40px;
+      }
+
+      &__img-wrap::after {
+         display: none;
+      }
    }
 
-   .story__content {
-      padding-top: 40px;
+   .testimonials {
+      &__personal {
+         padding: 0;
+      }
+
+      &__personal::after {
+         display: none;
+      }
    }
 
-   .story__img-wrap::after {
-      display: none;
-   }
+   .footer {
+      .footer__container {
+         padding: 0 15px 10px;
+      }
 
-   .testimonials__personal {
-      padding: 0;
-   }
-
-   .testimonials__personal::after {
-      display: none;
-   }
-
-   .footer__container {
-      padding: 0 15px 10px;
-   }
-
-   .footer__payment {
-      width: 265px;
+      .footer__payment {
+         width: 265px;
+      }
    }
 }

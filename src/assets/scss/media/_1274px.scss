@@ -7,27 +7,28 @@
 
    .story {
       padding: 10px 70px 75px;
+
+      &__content {
+         padding-top: 50px;
+      }
+
+      &__img-wrap {
+         margin: 0 auto;
+      }
    }
 
-   .story__content {
-      padding-top: 50px;
-   }
+   .blog {
+      &__img-wrap::after {
+         display: none;
+      }
 
-   .story__img-wrap {
-      margin: 0 auto;
-   }
+      &__wrap-img {
+         max-width: 738px;
+         margin: 0;
+      }
 
-   .blog__img-wrap::after {
-      display: none;
+      &__right-block {
+         padding: 25px 0;
+      }
    }
-
-   .blog__wrap-img {
-      max-width: 738px;
-      margin: 0;
-   }
-
-   .blog__right-block {
-      padding: 25px 0;
-   }
-
 }

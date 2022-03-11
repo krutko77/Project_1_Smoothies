@@ -24,21 +24,21 @@
          flex-direction: column;
          align-items: center;
       }
-   
+
       .menu__item {
          margin: 0px 0 30px;
       }
-   
+
       .personal__list {
          margin: 0 0 20px;
       }
-   } 
+   }
 
-   .about{
+   .about {
       &__title {
          margin: 0 0 30px;
       }
-   
+
       &__btn {
          width: 300px;
          padding-left: 25px;
@@ -49,21 +49,21 @@
          right: 25px;
       }
    }
-   
+
    .btn--green::after {
       right: 30px;
    }
 
    .smoothies {
       padding: 50px 0 60px;
-   }
 
-   .smoothies__title {
-      margin: 0 0 20px;
-   }
+      &__title {
+         margin: 0 0 20px;
+      }
 
-   .smoothies__container {
-      padding: 35px 20px;
+      &__container {
+         padding: 35px 20px;
+      }
    }
 
    .grid__item {
@@ -74,96 +74,100 @@
       margin: 0 0 70px;
    }
 
-   .testimonials__container {
-      padding: 50px 15px 70px;
-   }
+   .testimonials {
+      &__container {
+         padding: 50px 15px 70px;
+      }
 
-   .testimonials__title {
-      margin: 0 0 30px;
-      text-align: center;
-   }
+      &__title {
+         margin: 0 0 30px;
+         text-align: center;
+      }
 
-   .testimonials__content {
-      flex-direction: column-reverse;
-      align-items: center;
-      margin-bottom: 0;
-   }
+      &__content {
+         flex-direction: column-reverse;
+         align-items: center;
+         margin-bottom: 0;
+      }
 
-   .testimonials__paragraph {
-      margin: 20px 0 60px;
+      &__paragraph {
+         margin: 20px 0 60px;
+      }
    }
 
    .blog {
       padding: 70px 0 60px;
    }
 
-   .footer__header-wrap {
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 0px 0px;
-   }
+   .footer {
+      &__header-wrap {
+         flex-direction: column;
+         align-items: center;
+         padding: 30px 0px 0px;
+      }
 
-   .footer__logo {
-      margin: 0 auto 30px;
-   }
+      &__logo {
+         margin: 0 auto 30px;
+      }
 
-   .footer__central-block {
-      flex-direction: column;
-      align-items: flex-start;
-      max-width: 310px;
-      margin: 0;
-   }
+      &_central-block {
+         flex-direction: column;
+         align-items: flex-start;
+         max-width: 310px;
+         margin: 0;
+      }
 
-   .footer__information {
-      margin: 0 0 30px;
-   }
+      &__information {
+         margin: 0 0 30px;
+      }
 
-   .footer__payment {
-      margin: 0 0 20px;
-   }
+      &__payment {
+         margin: 0 0 20px;
+      }
 
-   .footer__list-payment {
-      max-width: 330px;
-   }
+      &__list-payment {
+         max-width: 330px;
+      }
 
-   .footer__form-input {
-      width: 310px;
-      height: 50px;
-      border-radius: 25px;
-      -webkit-border-radius: 25px;
-      -moz-border-radius: 25px;
-      -ms-border-radius: 25px;
-      -o-border-radius: 25px;
-   }
+      &__form-input {
+         width: 310px;
+         height: 50px;
+         border-radius: 25px;
+         -webkit-border-radius: 25px;
+         -moz-border-radius: 25px;
+         -ms-border-radius: 25px;
+         -o-border-radius: 25px;
+      }
 
-   .footer__form-btn {
-      padding-right: 70px;
-   }
+      &__form-btn {
+         padding-right: 70px;
+      }
 
-   .footer__form::before {
-      top: 15px;
-   }
+      &__form::before {
+         top: 15px;
+      }
 
-   .footer__form::after {
-      top: 60px;
-      left: 15px;
-   }
+      &__form::after {
+         top: 60px;
+         left: 15px;
+      }
 
-   .footer__social {
-      padding-right: 0px;
-      transform: translate(-10px, -35px);
-      -webkit-transform: translate(-10px, -35px);
-      -moz-transform: translate(-10px, -35px);
-      -ms-transform: translate(-10px, -35px);
-      -o-transform: translate(-10px, -35px);
-   }
+      &__social {
+         padding-right: 0px;
+         transform: translate(-10px, -35px);
+         -webkit-transform: translate(-10px, -35px);
+         -moz-transform: translate(-10px, -35px);
+         -ms-transform: translate(-10px, -35px);
+         -o-transform: translate(-10px, -35px);
+      }
 
-   .footer__form-social {
-      margin-bottom: 25px;
-   }
+      &__form-social {
+         margin-bottom: 25px;
+      }
 
-   .footer__go-top {
-      bottom: 20px;
-      right: 20px;
+      &__go-top {
+         bottom: 20px;
+         right: 20px;
+      }
    }
 }

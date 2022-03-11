@@ -23,4 +23,29 @@
       background: #9ca2a2;
       gap: 2px;
    }
+
+   .grid {
+
+      &__item {
+         @extend %flexCenter;
+         flex-direction: column;
+         justify-content: flex-end;
+         margin: 0;
+         background: white;
+         padding: 15px 35px 35px;
+      }
+   
+      &__img {
+         margin-bottom: 20px;
+      }
+   
+      &__caption {
+         font-family: Mulish;
+         font-size: calc(15px + 10 * (100vw / 1980));
+         line-height: 1.6;
+         font-weight: 800;
+         color: #f2612d;
+         letter-spacing: -0.02em;
+      }
+   }
 }

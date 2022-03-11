@@ -1,13 +1,15 @@
 @media screen and (max-width: 1499px) {
 
-   .header__top {
-      padding: 75px 0 30px;
-   }
+   .header {
+      &__top {
+         padding: 75px 0 30px;
+      }
 
-   .header__menu {
-      flex-direction: column;
-      justify-content: flex-end;
-      padding-top: 110px;
+      &__menu {
+         flex-direction: column;
+         justify-content: flex-end;
+         padding-top: 110px;
+      }
    }
 
    .about__img {
@@ -27,23 +29,25 @@
       padding: 80px 0 140px;
    }
 
-   .footer__header-wrap {
-      padding: 30px 0 0;
-   }
+   .footer {
+      &__header-wrap {
+         padding: 30px 0 0;
+      }
 
-   .footer__logo {
-      margin: 65px 5px 0 0;
-   }
+      &__logo {
+         margin: 65px 5px 0 0;
+      }
 
-   .footer__central-block {
-      margin: 0 0 0 70px;
-   }
+      &__central-block {
+         margin: 0 0 0 70px;
+      }
 
-   .footer__information {
-      margin-right: 15vw;
-   }
+      &__information {
+         margin-right: 15vw;
+      }
 
-   .footer__subtitle {
-      padding-top: 20px;
+      &__subtitle {
+         padding-top: 20px;
+      }
    }
 }

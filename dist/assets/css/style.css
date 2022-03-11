@@ -360,6 +360,10 @@ body {
     font-size: 10px;
 }
 
+body._lock {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -3060,16 +3064,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .header .menu__list {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     padding: 0;
 }
 
 .header .menu__item {
-    margin-right: 35px;
+    margin: 0 35px 0 0;
     font-family: Mulish;
     color: #ffff;
-    font-size: calc(14px + 2 * (100vw / 1980));
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     transition: color 0.2s ease;
@@ -3103,7 +3105,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .header__right-block {
-    max-width: 420px;
     padding: 10px 0;
 }
 
@@ -3121,40 +3122,30 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background: url("./../images/header_line.png") no-repeat;
 }
 
-.header__btn {
-    width: 280px;
-    height: 70px;
-    background-color: #0aa566;
-    font-size: calc(20px + 4 * (100vw / 1980));
-    line-height: 1.2;
-    padding: 0 38px;
-    margin: 0 auto;
-}
-
-.personal__list {
+.header .personal__list {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
     margin-right: 140px;
 }
 
-.personal__item {
+.header .personal__item {
     margin-right: 45px;
 }
 
-.personal__item:last-child {
+.header .personal__item:last-child {
     margin-right: 0;
 }
 
-.personal__link:hover {
+.header .personal__link:hover {
     opacity: 0.6;
 }
 
-.personal__count {
+.header .personal__count {
     position: relative;
 }
 
-.personal__count-number {
+.header .personal__count-number {
     position: absolute;
     top: -10px;
     left: 25px;
@@ -3171,22 +3162,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     text-align: center;
 }
 
-.social__list {
+.header .social__list {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
 }
 
-.social__item {
+.header .social__item {
     margin-right: 10px;
 }
 
-.social__item:last-child {
+.header .social__item:last-child {
     margin-right: 0;
 }
 
-.social__item:hover {
+.header .social__item:hover {
     opacity: 0.7;
+}
+
+.header__btn {
+    width: 280px;
+    height: 70px;
+    background-color: #0aa566;
+    font-size: calc(20px + 4 * (100vw / 1980));
+    line-height: 1.2;
+    padding: 0 38px;
+    margin: 0 auto;
 }
 
 .smoothies {
@@ -4324,24 +4325,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         flex-direction: column-reverse;
         -ms-flex-pack: end;
         justify-content: flex-end;
-        padding-top: 150px;
+        padding-top: 100px;
         transition: all 0.5s;
     }
 
-    .header__menu._active {
-        position: fixed;
-        left: 0;
-    }
-
-    .menu__list {
+    .header__menu .menu__list {
         -ms-flex-direction: column;
         flex-direction: column;
         -ms-flex-align: center;
         align-items: center;
     }
 
-    .menu__item {
-        margin: 0 0 50px;
+    .header__menu .menu__item {
+        margin: 0 0 40px;
+        font-size: 20px;
+    }
+
+    .header__menu .social__item {
+        margin-right: 30px;
+    }
+
+    .header__menu._active {
+        position: fixed;
+        left: 0;
     }
 
     .header__right-block {
@@ -4416,29 +4422,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         padding: 0 30px;
     }
 
-    .menu__list {
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    .menu__item {
-        margin: 0px 0 30px;
-    }
-
     .header__right-block {
         -ms-flex-direction: column;
         flex-direction: column;
         margin-bottom: 50px;
     }
 
-    .personal__list {
-        margin: 0 0 20px;
-    }
-
     .header__personal::after {
         display: none;
+    }
+
+    .header .menu__list {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .header .menu__item {
+        margin: 0px 0 30px;
+    }
+
+    .header .personal__list {
+        margin: 0 0 20px;
     }
 
     .about__title {
@@ -4451,12 +4457,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         margin: 0 auto;
     }
 
-    .btn--green::after {
-        right: 30px;
-    }
-
     .about__btn.btn--green::after {
         right: 25px;
+    }
+
+    .btn--green::after {
+        right: 30px;
     }
 
     .smoothies {
@@ -4516,7 +4522,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         margin: 0 auto 30px;
     }
 
-    .footer__central-block {
+    .footer_central-block {
         -ms-flex-direction: column;
         flex-direction: column;
         -ms-flex-align: start;
