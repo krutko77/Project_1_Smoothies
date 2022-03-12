@@ -60,6 +60,11 @@
       border: solid 2px #ffffff;
       border-radius: 30px;
       padding-right: 125px;
+      transition: opacity 0.3s ease;
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
 
       &:hover {
          opacity: 0.7;

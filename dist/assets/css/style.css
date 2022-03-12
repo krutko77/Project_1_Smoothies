@@ -2977,6 +2977,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
 }
 
 .btn--green {
@@ -2984,14 +2989,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    transition: opacity 0.2s ease;
-    -webkit-transition: color 0.2s ease;
-    -moz-transition: color 0.2s ease;
-    -ms-transition: color 0.2s ease;
-    -o-transition: color 0.2s ease;
 }
 
-.btn--green::after {
+.btn--green:hover {
+    background-color: #19967D;
+}
+
+.btn::after {
     content: "";
     position: absolute;
     right: 40px;
@@ -3000,11 +3004,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     background: url("./../images/arrow-yellow.png") no-repeat;
 }
 
-.btn--green:hover {
-    opacity: 0.7;
-}
-
-.btn--green:hover::after {
+.btn:hover::after {
     transform: translateX(10px);
     -webkit-transform: translateX(10px);
     -moz-transform: translateX(10px);
@@ -3012,7 +3012,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -o-transform: translateX(10px);
 }
 
-.btn--green:active {
+.btn:active {
     transform: translate(1px, 2px);
     -webkit-transform: translate(1px, 2px);
     -moz-transform: translate(1px, 2px);
@@ -3137,8 +3137,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-right: 0;
 }
 
+.header .personal__link {
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+}
+
 .header .personal__link:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .header .personal__count {
@@ -3368,6 +3376,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     border: solid 2px #ffffff;
     border-radius: 30px;
     padding-right: 125px;
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
+    -moz-transition: opacity 0.3s ease;
+    -ms-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
 }
 
 .products__btn:hover {
@@ -4195,7 +4208,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         right: auto;
     }
 
-    .grid__item {
+    .about__right-block {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .smoothies .grid__item {
         padding: 15px 5px 35px;
     }
 
@@ -4358,10 +4380,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         margin-right: 30px;
     }
 
-    .about__right-block {
-        max-width: 660px;
-    }
-
     .smoothies {
         padding: 50px 0 60px;
     }
@@ -4432,6 +4450,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         display: none;
     }
 
+    .header__top {
+        margin-bottom: 120px;
+    }
+
     .header .menu__list {
         -ms-flex-direction: column;
         flex-direction: column;
@@ -4459,10 +4481,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     .about__btn.btn--green::after {
         right: 25px;
-    }
-
-    .btn--green::after {
-        right: 30px;
     }
 
     .smoothies {
@@ -4595,10 +4613,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     .header__burger-btn {
         top: 20px;
         right: 20px;
-    }
-
-    .header__top {
-        margin-bottom: 130px;
     }
 
     .header__logo {
