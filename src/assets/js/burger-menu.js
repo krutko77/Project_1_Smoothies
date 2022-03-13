@@ -1,3 +1,4 @@
+
 // бургер меню
 const menuIcon = document.querySelector('.header__menu-icon');
 const headerMenu = document.querySelector('.header__menu');

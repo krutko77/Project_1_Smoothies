@@ -7,14 +7,14 @@
          margin: 0 0 100px;
       }
 
-      &__personal::after {
+      &__article::after {
          font-size: 180px;
          line-height: 40px;
          top: 275px;
          left: 0px;
       }
 
-      &__content {
+      &__article {
          flex-direction: column-reverse;
          align-items: center;
          margin-bottom: 15px;
@@ -24,7 +24,7 @@
          margin-bottom: 20px;
       }
 
-      &__paragraph {
+      &__content {
          margin: 75px 0 85px;
       }
    }

@@ -117,13 +117,13 @@
    }
 
    .testimonials {
-      &__personal {
+      &__article {
          padding: 0;
-      }
 
-      &__personal::after {
-         display: none;
-      }
+         &::after {
+            display: none;
+         }
+      }      
    }
 
    .footer {
