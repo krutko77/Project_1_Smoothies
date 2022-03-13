@@ -37,13 +37,13 @@
             right: -20px;
             width: 450px;
             height: 13px;
-            background: url('./../images/about_line.png') no-repeat;
+            background: url('./../img/about_line.png') no-repeat;
          }
       }
    }
 
    &__list {
-      list-style-image: url('./../images/icons/about.png');
+      list-style-image: url('./../img/icons/about.png');
       @include font (Mulish, #ffff);
       font-size: calc(18px + 3 * (100vw / 1980));
       line-height: 2.1;

@@ -1,4 +1,4 @@
-.products {
+gproducts {
 
    &__wrap {
       display: flex;
@@ -13,19 +13,19 @@
       min-width: 320px;
 
       &--сhocolate {
-         background: url('./../images/products_bg_1.png');
+         background: url('./../img/products_bg_1.png');
       }
 
       &--vegan {
-         background: url('./../images/products_bg_2.png');
+         background: url('./../img/products_bg_2.png');
       }
 
       &--lemon {
-         background: url('./../images/products_bg_3.png');
+         background: url('./../img/products_bg_3.png');
       }
 
       &--turmeric {
-         background: url('./../images/products_bg_4.png');
+         background: url('./../img/products_bg_4.png');
       }
    }
 
@@ -77,7 +77,7 @@
          right: 35px;
          width: 30px;
          height: 16px;
-         background: url('./../images/arrow-white.png') no-repeat;
+         background: url('./../img/arrow-white.png') no-repeat;
       }
 
       &:hover::after {

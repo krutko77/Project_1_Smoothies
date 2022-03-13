@@ -1,6 +1,6 @@
 .header {
    height: 100vh;
-   background: url('./../images/header_bg_img.jpg') no-repeat;
+   background: url('./../img/header_bg_img.jpg') no-repeat;
    background-size: cover;
    background-position: center;
 
@@ -18,7 +18,7 @@
 
    &__menu-icon {
       display: none;
-   }   
+   }
 
    &__menu-icon._active {
       span {
@@ -41,7 +41,7 @@
          display: flex;
          padding: 0;
       }
-   
+
       &__item {
          margin: 0 35px 0 0;
          @include font(Mulish, #ffff);
@@ -54,11 +54,11 @@
          -moz-transition: color 0.2s ease;
          -ms-transition: color 0.2s ease;
          -o-transition: color 0.2s ease;
-   
+
          &:hover {
             text-decoration: underline;
          }
-   
+
          &:last-child {
             margin-right: 0;
          }
@@ -77,9 +77,9 @@
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);      
+      -o-transform: translateX(-50%);
    }
-   
+
    &__right-block {
       // max-width: 420px;
       @extend %flexCenter;
@@ -97,7 +97,7 @@
       left: 205px;
       width: 47px;
       height: 2px;
-      background: url('./../images/header_line.png') no-repeat;
+      background: url('./../img/header_line.png') no-repeat;
    }
 
    .personal {
@@ -106,14 +106,14 @@
          padding: 0;
          margin-right: 140px;
       }
-   
+
       &__item {
          margin-right: 45px;
-   
+
          &:last-child {
             margin-right: 0;
          }
-        
+
       }
 
       &__link {
@@ -125,13 +125,13 @@
 
          &:hover {
             opacity: 0.7;
-         }      
-      }   
-     
+         }
+      }
+
       &__count {
          position: relative;
       }
-   
+
       &__count-number {
          position: absolute;
          top: -10px;
@@ -155,14 +155,14 @@
          display: flex;
          padding: 0;
       }
-   
+
       &__item {
          margin-right: 10px;
-   
+
          &:last-child {
             margin-right: 0;
          }
-   
+
          &:hover {
             opacity: 0.7;
          }
