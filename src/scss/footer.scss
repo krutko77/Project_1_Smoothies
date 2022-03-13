@@ -1,0 +1,217 @@
+.footer {
+
+   &__header {
+      background-color: #f7ac38;
+      padding: 0px 0 15px;
+   }
+
+   &__header-wrap {
+      display: flex;
+      padding: 70px 0px 60px;
+      flex-wrap: wrap;
+   }
+
+   &__logo {
+      margin: 65px 15.3vw 0 0;     
+   }
+
+   &__central-block {
+      display: flex;
+      margin-right: 6.4vw;
+      width: 590px;
+   }
+
+   &__subtitle {
+      @include font(Mulish, #ffff);
+      font-size: calc(24px + 2 * (100vw / 1980));
+      line-height: 1.5;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin: 0 0 20px;
+   }
+
+   &__information {
+      margin-right: 7.8vw;
+   }
+
+   &__list-info {
+      padding-left: 0px;
+      white-space: nowrap;
+   }
+
+   &__link-info {
+      font-family: Mulish;
+      font-size: calc(16px + 2 * (100vw / 1980));
+      line-height: 1.9;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #6d450c;
+
+      &:hover {
+         opacity: 0.6;
+      }
+   }
+
+   &__payment {
+      width: 280px;
+   }
+
+   &__list-payment {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-top: 5px;
+   }
+
+   &__payment-item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      &:hover {
+         opacity: 0.6;
+      }
+   }
+
+   &__form {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         bottom: 5px;
+         left: 125px;
+         width: 48px;
+         height: 43px;
+         background: url('./../images/ft_arrow.png') no-repeat;
+      }
+   }
+
+   &__subtitle--form {
+      margin-bottom: 25px;
+   }
+
+   &__form-input {
+      width: 495px;
+      height: 60px;
+      border-radius: 30px;
+      border: none;
+      padding: 20px 0 15px 70px;
+      margin-bottom: 20px;
+      background-image: url('./../images/ft_input.png');
+      background-repeat: no-repeat;
+      background-position: 30px;
+
+      &::placeholder {
+         font-family: Mulish;
+         font-size: calc(15px + 2 * (100vw / 1980));
+         line-height: 2.0;
+         font-weight: 800;
+         letter-spacing: -0.02em;
+         color: #6d450c;
+      }
+   }
+
+   &__form-btn {
+      background-color: transparent;
+      border: none;
+      font-family: Mulish;
+      font-size: calc(14px + 2 * (100vw / 1980));
+      line-height: 2.5;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #6d450c;
+      padding-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+         opacity: 0.6;
+      }
+   }
+
+   &__social {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      transform: translate(-50px, -35px);
+   }
+
+   &__social-item {
+      margin-right: 25px;
+
+      &:hover {
+         opacity: 0.6;
+      }
+
+      &:last-child {
+         margin: 0;
+      }
+   }
+
+   &__bottom {
+      display: flex;
+      justify-content: center;
+      background-color: #6e2b1c;
+      padding: 15px 0 15px 0;
+      position: relative;
+   }
+
+   &__small {
+      align-self: center;
+      font-family: Mulish;
+      font-size: calc(12px + 1 * (100vw / 1980));
+      line-height: 2.7;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #af8a82;
+   }
+
+   &__go-top {
+      position: fixed;
+      bottom: 40px;
+      right: 100px;
+      width: 50px;
+      height: 50px;
+      background-color: #f2732f;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &:hover {
+         background-color: #ee5c0d;
+      }
+
+      &::before {
+         content: "Go top";
+         position: absolute;
+         top: 35px;
+         right: 60px;
+         width: 50px;
+         font-family: Mulish;
+         font-size: calc(14px + 2 * (100vw / 1980));
+         line-height: 2.5;
+         font-weight: 400;
+         letter-spacing: -0.02em;
+         color: #f2662f;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 13px;
+         height: 25px;
+         background: url('./../images/go_top_arrow.png') no-repeat;
+         -webkit-transform: translate(-50%, -50%);
+         -moz-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+      }
+   }
+}

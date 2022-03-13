@@ -1,0 +1,34 @@
+@media screen and (max-width: 1274px) {
+
+   .about__btn .blog__container {
+      max-width: 740px;
+      padding: 100px 30px 100px;
+   }
+
+   .story {
+      padding: 10px 70px 75px;
+
+      &__content {
+         padding-top: 50px;
+      }
+
+      &__img-wrap {
+         margin: 0 auto;
+      }
+   }
+
+   .blog {
+      &__img-wrap::after {
+         display: none;
+      }
+
+      &__wrap-img {
+         max-width: 738px;
+         margin: 0;
+      }
+
+      &__right-block {
+         padding: 25px 0;
+      }
+   }
+}

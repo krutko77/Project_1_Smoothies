@@ -1,0 +1,138 @@
+@media screen and (max-width: 768px) {
+
+   .header {
+      &__menu-icon {
+         display: block;
+         position: absolute;
+         top: 35px;
+         right: 30px;
+         width: 30px;
+         height: 20px;
+         cursor: pointer;
+         z-index: 100;
+         background-color: transparent;
+         border: none;
+
+         span,
+         &::before,
+         &::after {
+            content: "";
+            transition: all 0.3s ease 0s;
+            left: 0px;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+         }
+
+         &::before {
+            top: 0px;
+         }
+
+         &::after {
+            bottom: 0px;
+         }
+
+         span {
+            top: calc(50% - 1px);
+         }
+      }
+
+      &__top {
+         margin-bottom: 160px;
+      }
+
+      &__menu {
+         position: fixed;
+         top: 0;
+         left: -100%;
+         width: 100%;
+         height: 100%;
+         background-color: #0aa566;
+         z-index: 99;
+         flex-direction: column-reverse;
+         justify-content: flex-end;
+         padding-top: 100px;
+         transition: all 0.5s;
+      }
+
+      &__menu._active {
+         position: fixed;
+         left: 0;
+      }
+
+      &__right-block {
+         margin-bottom: 100px;
+      }
+
+      &__logo {
+         top: 100px;
+      }
+
+      .menu__list {
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .menu__item {
+         margin: 0 0 40px;
+         font-size: 20px;
+      }
+
+      .social__item {
+         margin-right: 30px;
+      }
+   }
+
+   .smoothies {
+      padding: 50px 0 60px;
+
+      &__title {
+         margin: 0 0 25px;
+      }
+
+      &__text {
+         margin: 0 0 40px;
+      }
+
+      &__grid {
+         grid-template-columns: 1fr 1fr;
+      }
+
+      .grid__item {
+         padding: 30px 35px 35px;
+      }
+   }
+
+   .story {
+      padding: 10px 0 75px;
+
+      &__content {
+         padding-top: 40px;
+      }
+
+      &__img-wrap::after {
+         display: none;
+      }
+   }
+
+   .testimonials {
+      &__article {
+         padding: 0;
+
+         &::after {
+            display: none;
+         }
+      }      
+   }
+
+   .footer {
+      .footer__container {
+         padding: 0 15px 10px;
+      }
+
+      .footer__payment {
+         width: 265px;
+      }
+   }
+}

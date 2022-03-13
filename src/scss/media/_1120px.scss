@@ -1,0 +1,31 @@
+@media screen and (max-width: 1120px) {
+
+   .testimonials {
+      padding: 115px 0 75px;
+
+      &__title {
+         margin: 0 0 100px;
+      }
+
+      &__article::after {
+         font-size: 180px;
+         line-height: 40px;
+         top: 275px;
+         left: 0px;
+      }
+
+      &__article {
+         flex-direction: column-reverse;
+         align-items: center;
+         margin-bottom: 15px;
+      }
+
+      &__text {
+         margin-bottom: 20px;
+      }
+
+      &__content {
+         margin: 75px 0 85px;
+      }
+   }
+}

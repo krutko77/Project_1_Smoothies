@@ -1,0 +1,34 @@
+.testimonials {
+   background-color: #682F1C;
+   padding: 110px 0 80px;
+   // z-index: -2;
+
+   &__inner {
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: -190px;
+         right: 60px;
+         width: 410px;
+         height: 301px;
+         background: url('./../images/testimonials_dots.png') no-repeat;
+      }
+   }
+
+   &__wrap {
+      @extend %flexCenter;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+   }
+
+   &__title {
+      margin: 0 0 60px;
+   }
+
+   &__title--red {
+      color: #f2612d;
+   }  
+}

@@ -1,0 +1,104 @@
+@media screen and (max-width: 1044px) {
+
+   .about {
+      &__container {
+         padding: 80px 30px 105px;
+      }
+
+      &__wrap {
+         flex-wrap: wrap;
+      }
+
+      &__title--green::after {
+         top: 50px;
+      }
+
+      &__img {
+         right: auto;
+      }
+
+      &__right-block {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   .smoothies {
+      .grid__item {
+         padding: 15px 5px 35px;
+      }
+   }
+
+   .story {
+      &__content {
+         margin: 0 100px 70px 0;
+      }
+
+      &__img-wrap::after {
+         display: none;
+      }
+   }
+
+   .blog {
+      padding: 80px 0 100px;
+
+      &__wrap {
+         max-width: 708px;
+      }
+
+      &__img-wrap {
+         width: 100%;
+         margin: 0 auto;
+      }
+
+      &__content-wrap {
+         flex-wrap: wrap;
+      }
+
+      &__text {
+         margin: 0 auto;
+      }
+   }
+
+   .footer {
+      &__container {
+         padding: 0 15px 10px;
+      }
+
+      &__header-wrap {
+         flex-direction: column;
+         align-items: center;
+         padding: 60px 0 0;
+      }
+
+      &__logo {
+         margin: 0 0 55px;
+      }
+
+      &__central-block {
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+         margin: 0;
+      }
+
+      &__information {
+         margin-right: 50px;
+      }
+
+      &__payment {
+         width: 265px;
+      }
+
+      &__form-social {
+         margin-bottom: 25px;
+      }
+
+      &__go-top {
+         position: fixed;
+         bottom: 45px;
+         right: 30px;
+      }
+   }
+}

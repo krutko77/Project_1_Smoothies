@@ -1,0 +1,101 @@
+@media screen and (max-width: 360px) {
+
+   .header {
+      &__burger-btn {
+         top: 20px;
+         right: 20px;
+      }
+
+      &__logo {
+         top: 100px;
+      }
+   }
+
+   .products {
+      &__item {
+         padding: 70px 0 85px;
+         min-width: 300px;
+      }
+
+      &__img {
+         width: 33%;
+      }
+   }
+
+   .story {
+      &__container {
+         padding: 10px 15px 80px;
+      }
+
+      &__title {
+         margin: 0 0 20px;
+      }
+
+      &__content {
+         padding-top: 40px;
+         margin: 0;
+      }
+
+      &__img-wrap {
+         margin: 60px 0 0;
+      }
+
+      &__img-wrap::after {
+         display: none;
+         top: 0;
+         left: 0;
+         width: 29px;
+         height: 21px;
+      }
+
+      &__btn {
+         margin: 0 auto;
+      }
+   }
+
+   .blog {
+      &__container {
+         padding: 50px 15px;
+      }
+
+      &__content-wrap {
+         justify-content: flex-start;
+      }
+
+      &__content-wrap::before {
+         display: none;
+      }
+
+      &__title {
+         margin: 0 auto 30px 0;
+      }
+
+      &__wrap-img {
+         max-width: 738px;
+         margin: 0;
+      }
+
+      &__right-block {
+         padding: 35px 0;
+      }
+
+      &__right-block-header {
+         margin-bottom: 25px;
+      }
+
+      &__text {
+         max-width: 300px;
+      }
+   }
+
+   .instagram {
+      &__item {
+         min-width: 265px;
+      }
+
+      &__item::after {
+         bottom: 10px;
+         right: 10px;
+      }
+   }
+}

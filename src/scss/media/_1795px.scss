@@ -1,0 +1,33 @@
+@media screen and (max-width: 1795px) {
+
+   .about {
+      &__img {
+         right: 35px;
+      }
+
+      &__title--green::after {
+         width: 100%;
+         right: 0px;
+      }
+   }
+
+   .footer {
+      &__header-wrap {
+         justify-content: space-around;
+      }
+
+      &__logo {
+         margin: 65px 5px 0 0;
+      }
+
+      &__information {
+         margin-right: 100px;
+      }
+
+      &__central-block {
+         justify-content: flex-end;
+         width: 640px;
+         margin-right: 70px;
+      }
+   }
+}

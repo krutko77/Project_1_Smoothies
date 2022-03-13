@@ -1,0 +1,98 @@
+.products {
+
+   &__wrap {
+      display: flex;
+      overflow: auto;
+   }
+
+   &__item {
+      @extend %flexCenter;
+      flex-direction: column;
+      flex: 0 1 25%;
+      padding: 130px 0 75px;
+      min-width: 320px;
+
+      &--сhocolate {
+         background: url('./../images/products_bg_1.png');
+      }
+
+      &--vegan {
+         background: url('./../images/products_bg_2.png');
+      }
+
+      &--lemon {
+         background: url('./../images/products_bg_3.png');
+      }
+
+      &--turmeric {
+         background: url('./../images/products_bg_4.png');
+      }
+   }
+
+
+   &__img {
+      margin-bottom: 30px;
+   }
+
+   &__title {
+      font-size: calc(22px + 2 * (100vw / 1980));
+      line-height: 22px;
+      margin: 0 0 5px;
+   }
+
+   &__caption {
+      font-size: calc(18px + 3 * (100vw / 1980));
+      line-height: 32px;
+      font-weight: 400;
+      margin-bottom: 60px;
+   }
+
+   &__title,
+   &__caption,
+   &__btn {
+      @include font(Mulish, #ffff);
+   }
+
+   &__btn {
+      position: relative;
+      background-color: transparent;
+      width: 204px;
+      border: solid 2px #ffffff;
+      border-radius: 30px;
+      padding-right: 125px;
+      transition: opacity 0.3s ease;
+      -webkit-transition: opacity 0.3s ease;
+      -moz-transition: opacity 0.3s ease;
+      -ms-transition: opacity 0.3s ease;
+      -o-transition: opacity 0.3s ease;
+
+      &:hover {
+         opacity: 0.7;
+      }
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 20px;
+         right: 35px;
+         width: 30px;
+         height: 16px;
+         background: url('./../images/arrow-white.png') no-repeat;
+      }
+
+      &:hover::after {
+         transform: translateX(10px);
+         -webkit-transform: translateX(10px);
+         -moz-transform: translateX(10px);
+         -o-transform: translateX(10px);
+      }
+
+      &:active {
+         transform: translate(1px, 2px);
+         -webkit-transform: translate(1px, 2px);
+         -moz-transform: translate(1px, 2px);
+         -ms-transform: translate(1px, 2px);
+         -o-transform: translate(1px, 2px);
+      }
+   }
+}
