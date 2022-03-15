@@ -1,10 +1,10 @@
 
    // slick слайдер
-   $(document).ready(function(){
-      $('.slider').slick({
-         arrows:true         
-      });
-    })
+   // $(document).ready(function(){
+   //    $('.slider').slick({
+   //       arrows:true         
+   //    });
+   //  })
 
 
 
@@ -47,6 +47,3 @@ if (menuLinks.length > 0) {
 	}
 }
 
-// $( document ).ready(function() {
-//    new WOW().init()
-// });

@@ -137,23 +137,31 @@
             <div class="testimonials__inner">
                <div class="container">
                   <div class="testimonials__wrap">
-                     <h2 class="testimonials__title title">Why clients <span class="testimonials__title--red">LOVE</span>
-                        us?
-                     </h2>
-                     <div class="slider">
-                        <div class="slider__item">
-                           <img class="carousel__img" src="@img/blog_img.png" alt="">
-                        </div>
-                        <div class="slider__item">
-                           <img class="slider__img" src="@img/blog_img.png" alt="">
-                        </div>
-                        <div class="slider__item">
-                           <img class="slider__img" src="@img/blog_img.png" alt="">
-                        </div>
-                     </div>
+                     <h2 class="testimonials__title title">Why clients <span class="testimonials__title--red">LOVE</span> us?</h2>              
+                              
+                     
                   </div>
                </div>
-            </div>
+            </div>            
+         </section>
+         <section class="testimonials__2">
+            <!-- Оболочка слайдера -->
+            <div class="testimonials__slider swiper">
+               <!-- Двигающееся часть слайдера -->
+               <div class="testimonials__wrapper swiper-wrapper">
+                  <!-- Слайд -->
+                  <div class="testimonials__slide swiper-slide"><img class="carousel__img" src="@img/blog_img.png" alt=""></div>
+                  <div class="testimonials__slide swiper-slide"><img class="carousel__img" src="@img/blog_img.png" alt=""></div>
+                  <div class="testimonials__slide swiper-slide"><img class="carousel__img" src="@img/blog_img.png" alt=""></div>
+               </div>
+               <!-- Если нужна пагинация -->
+               <div class="swiper-pagination"></div>
+               <!-- Если нужна навигация (влево/вправо) -->
+               <button type="button" class="swiper-button-prev"></button>
+               <button type="button" class="swiper-button-next"></button>
+               <!-- Если нужен скролбар -->
+               <div class="swiper-scrollbar"></div>
+            </div>                  
          </section>
          <section class="blog" id="blog">
             <div class="container">
