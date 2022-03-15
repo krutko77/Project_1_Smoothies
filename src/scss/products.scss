@@ -60,11 +60,7 @@
       border: solid 2px #ffffff;
       border-radius: 30px;
       padding-right: 125px;
-      transition: opacity 0.3s ease;
-      -webkit-transition: opacity 0.3s ease;
-      -moz-transition: opacity 0.3s ease;
-      -ms-transition: opacity 0.3s ease;
-      -o-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease;     
 
       &:hover {
          opacity: 0.7;
@@ -81,18 +77,11 @@
       }
 
       &:hover::after {
-         transform: translateX(10px);
-         -webkit-transform: translateX(10px);
-         -moz-transform: translateX(10px);
-         -o-transform: translateX(10px);
+         transform: translateX(10px);        
       }
 
       &:active {
-         transform: translate(1px, 2px);
-         -webkit-transform: translate(1px, 2px);
-         -moz-transform: translate(1px, 2px);
-         -ms-transform: translate(1px, 2px);
-         -o-transform: translate(1px, 2px);
+         transform: translate(1px, 2px);         
       }
    }
 }

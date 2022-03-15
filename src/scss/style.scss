@@ -40,15 +40,16 @@ body {
    }
 }
 
-@import "base";
+// @import "base";
 
 // Подключение стилей общих элементов проекта
-@import "common";
+// @import "common";
 
 // Подключение стилей отдельных блоков
 
-@import "./libs/animate.scss";
+
 @import "./libs/slick-slider.scss";
+@import "./libs/aos.scss";
 
 @import "./common.scss";
 @import "./header.scss";
@@ -69,5 +70,7 @@ body {
 @import "./media/570px.scss";
 @import "./media/400px.scss";
 @import "./media/360px.scss";
+
+
 
 

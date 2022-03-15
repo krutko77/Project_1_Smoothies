@@ -47,4 +47,6 @@ if (menuLinks.length > 0) {
 	}
 }
 
-
+// $( document ).ready(function() {
+//    new WOW().init()
+// });
