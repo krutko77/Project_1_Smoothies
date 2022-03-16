@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-   @@include('html/_head.htm',{
-      "title":"Smoothies"})
+@@include('html/_head.htm',{
+"title":"Smoothies"})
 
 <body>
    <div class="wrapper">
@@ -24,37 +24,37 @@
                         <img class="grid__img" src="@img/icons/icon_Plant_Based.png" alt="picture">
                         <figcaption class="grid__caption">Plant Based</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Vegan.png" alt="picture">
                         <figcaption class="grid__caption">Vegan</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Paleo.png" alt="picture">
                         <figcaption class="grid__caption">Paleo</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Gluten-Free.png" alt="picture">
                         <figcaption class="grid__caption">Gluten-Free</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Corn-Free.png" alt="picture">
                         <figcaption class="grid__caption">Corn-Free</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Soy-Free.png" alt="picture">
                         <figcaption class="grid__caption">Soy-Free</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Ayurvedic.png" alt="picture">
                         <figcaption class="grid__caption">Ayurvedic</figcaption>
                      </figure>
-   
+
                      <figure class="grid__item">
                         <img class="grid__img" src="@img/icons/icon_Made_With_Love.png" alt="picture">
                         <figcaption class="grid__caption">Made With Love</figcaption>
@@ -92,25 +92,29 @@
          <section class="products" id="products">
             <div class="products__wrap">
                <div class="products__item--сhocolate products__item">
-                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500" src="@img/products_img_1.png" alt="Dark_Chocolate_Smoothie">
+                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500"
+                     src="@img/products_img_1.png" alt="Dark_Chocolate_Smoothie">
                   <h3 class="products__title">Dark Chocolate Smoothie</h3>
                   <span class="products__caption">100 ml</span>
                   <button class="btn products__btn">Buy</button>
                </div>
                <div class="products__item--vegan products__item">
-                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500" src="@img/products_img_2.png" alt="Vegan_Lettuce_Smoothie">
+                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500"
+                     src="@img/products_img_2.png" alt="Vegan_Lettuce_Smoothie">
                   <h3 class="products__title">Vegan Lettuce Smoothie</h3>
                   <span class="products__caption">100 ml</span>
                   <button class="btn products__btn">Buy</button>
                </div>
                <div class="products__item--lemon products__item">
-                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500" src="@img/products_img_3.png" alt="Lemon_Ginger_Smoothie">
+                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500"
+                     src="@img/products_img_3.png" alt="Lemon_Ginger_Smoothie">
                   <h3 class="products__title">Lemon Ginger Smoothie</h3>
                   <span class="products__caption">100 ml</span>
                   <button class="btn products__btn">Buy</button>
                </div>
                <div class="products__item--turmeric products__item">
-                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500" src="@img/products_img_4.png" alt="Turmeric_Garlic_Smoothie">
+                  <img class="products__img" data-aos="zoom-in-up" data-aos-duration="1500"
+                     src="@img/products_img_4.png" alt="Turmeric_Garlic_Smoothie">
                   <h3 class="products__title">Turmeric Garlic Smoothie</h3>
                   <span class="products__caption">100 ml</span>
                   <button class="btn products__btn">Buy</button>
@@ -124,44 +128,86 @@
                      <h2 class="story__title title">Our story</h2>
                      <p class="story__text text">As products typically using raw fruits or vegetables, smoothies include
                         dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a
-                        consistency similar to a milkshake.</p>                       
-                        <a class="btn story__btn btn--green" href="#">Who we are</a>                                            
+                        consistency similar to a milkshake.</p>
+                     <a class="btn story__btn btn--green" href="#">Who we are</a>
                   </div>
                   <div class="story__img-wrap">
-                     <img class="story__img" data-aos="zoom-in" data-aos-duration="1500" src="@img/story_img.png" alt="picture">
+                     <img class="story__img" data-aos="zoom-in" data-aos-duration="1500" src="@img/story_img.png"
+                        alt="picture">
                   </div>
                </div>
             </div>
          </section>
-         <section class="testimonials" id="testimonials">
+         <section class="testimonials id=" testimonials">
             <div class="testimonials__inner">
                <div class="container">
-                  <div class="testimonials__wrap">
-                     <h2 class="testimonials__title title">Why clients <span class="testimonials__title--red">LOVE</span> us?</h2>              
-                              
-                     
+                  <h2 class="testimonials__title title">Why clients <span class="testimonials__title--red">LOVE</span>
+                     us?</h2>                 
+                  <div class="testimonials__slider swiper">                     
+                     <div class="swiper-wrapper">                        
+                        <article class="swiper-slide">
+                           <div class="swiper__content">
+                              <p class="swiper__text text">Smoothie is great. I don't know what else to say. I will let
+                                 my mum know about this, she could really make use of Smoothie! Smoothie saved my
+                                 business.
+                              </p>
+                              <span class="swiper__caption--orange text">- from Santa Monica, CA</span>
+                           </div>
+                           <div class="swiper__img-wrap"><img class="swiper__img" src="@img/testimonials_img.png"
+                                 alt="picture"></div>
+                        </article>
+                        <article class="swiper-slide">
+                           <div class="swiper__content">
+                              <p class="swiper__text text">Smoothie is great. I don't know what else to say. I will let
+                                 my mum know about this, she could really make use of Smoothie! Smoothie saved my
+                                 business.
+                              </p>
+                              <span class="swiper__caption--orange text">- from Santa Monica, CA</span>
+                           </div>
+                           <div class="swiper__img-wrap"><img class="swiper__img" src="@img/testimonials_img.png"
+                                 alt="picture"></div>
+                        </article>
+                        <article class="swiper-slide">
+                           <div class="swiper__content">
+                              <p class="swiper__text text">Smoothie is great. I don't know what else to say. I will let
+                                 my mum know about this, she could really make use of Smoothie! Smoothie saved my
+                                 business.
+                              </p>
+                              <span class="swiper__caption--orange text">- from Santa Monica, CA</span>
+                           </div>
+                           <div class="swiper__img-wrap"><img class="swiper__img" src="@img/testimonials_img.png"
+                                 alt="picture"></div>
+                        </article>
+                        <article class="swiper-slide">
+                           <div class="swiper__content">
+                              <p class="swiper__text text">Smoothie is great. I don't know what else to say. I will let
+                                 my mum know about this, she could really make use of Smoothie! Smoothie saved my
+                                 business.
+                              </p>
+                              <span class="swiper__caption--orange text">- from Santa Monica, CA</span>
+                           </div>
+                           <div class="swiper__img-wrap"><img class="swiper__img" src="@img/testimonials_img.png"
+                                 alt="picture"></div>
+                        </article>
+                        <article class="swiper-slide">
+                           <div class="swiper__content">
+                              <p class="swiper__text text">Smoothie is great. I don't know what else to say. I will let
+                                 my mum know about this, she could really make use of Smoothie! Smoothie saved my
+                                 business.
+                              </p>
+                              <span class="swiper__caption--orange text">- from Santa Monica, CA</span>
+                           </div>
+                           <div class="swiper__img-wrap"><img class="swiper__img" src="@img/testimonials_img.png"
+                                 alt="picture"></div>
+                        </article>
+                     </div>
+                     <div class="swiper__buttons-block">
+                        <button type="button" class="swiper-button-prev"></button>
+                        <button type="button" class="swiper-button-next"></button>
+                     </div>
                   </div>
                </div>
-            </div>            
-         </section>
-         <section class="testimonials__2">
-            <!-- Оболочка слайдера -->
-            <div class="testimonials__slider swiper">
-               <!-- Двигающееся часть слайдера -->
-               <div class="testimonials__wrapper swiper-wrapper">
-                  <!-- Слайд -->
-                  <div class="testimonials__slide swiper-slide"><img class="carousel__img" src="@img/blog_img.png" alt=""></div>
-                  <div class="testimonials__slide swiper-slide"><img class="carousel__img" src="@img/blog_img.png" alt=""></div>
-                  <div class="testimonials__slide swiper-slide"><img class="carousel__img" src="@img/blog_img.png" alt=""></div>
-               </div>
-               <!-- Если нужна пагинация -->
-               <div class="swiper-pagination"></div>
-               <!-- Если нужна навигация (влево/вправо) -->
-               <button type="button" class="swiper-button-prev"></button>
-               <button type="button" class="swiper-button-next"></button>
-               <!-- Если нужен скролбар -->
-               <div class="swiper-scrollbar"></div>
-            </div>                  
+            </div>
          </section>
          <section class="blog" id="blog">
             <div class="container">
@@ -169,7 +215,8 @@
                   <h2 class="blog__title title">Our blog</h2>
                   <div class="blog__content-wrap">
                      <div class="blog__img-wrap">
-                        <img class="blog__img" data-aos="fade-right" data-aos-duration="1500" src="@img/blog_img.png" alt="picture">
+                        <img class="blog__img" data-aos="fade-right" data-aos-duration="1500" src="@img/blog_img.png"
+                           alt="picture">
                      </div>
                      <div class="blog__right-block">
                         <div class="blog__right-block-header">
@@ -202,7 +249,7 @@
                   </li>
             </div>
          </section>
-      </main>      
+      </main>
       @@include('html/_footer.htm',{})
    </div>
    @@include('html/_js.htm',{})
