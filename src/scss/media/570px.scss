@@ -59,11 +59,7 @@
 
       &__title {
          margin: 0 0 20px;
-      }
-
-      &__container {
-         padding: 35px 20px;
-      }
+      }      
    }
 
    .grid__item {
@@ -75,23 +71,21 @@
    }
 
    .testimonials {
-      &__container {
-         padding: 50px 15px 70px;
-      }
+      padding: 50px 0 30px;    
 
-      &__title {
-         margin: 0 0 30px;
-         text-align: center;
-      }
+      .swiper {
 
-      &__article {
-         flex-direction: column-reverse;
-         align-items: center;
-         margin-bottom: 0;
-      }
+         &__wrapper {
+            margin-bottom: 0;
+         }
 
-      &__content {
-         margin: 20px 0 60px;
+         &__article {
+            margin-bottom: 0;
+         }
+
+         &__content {
+            margin: 20px 0 0;
+         }
       }
    }
 

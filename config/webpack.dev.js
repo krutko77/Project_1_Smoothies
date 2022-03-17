@@ -51,7 +51,8 @@ const config = {
 		static: paths.build,
 		open: true,
 		compress: true,
-		port: 'auto',
+		// port: 'auto',
+      port: 8080,
 		hot: true,
 		host: 'local-ip', // localhost
 

@@ -127,11 +127,8 @@
    }
 
    .footer {
-      .footer__container {
-         padding: 0 15px 10px;
-      }
-
-      .footer__payment {
+      
+      &__payment {
          width: 265px;
       }
    }

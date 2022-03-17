@@ -14,9 +14,9 @@ function initSliders() {
 			spaceBetween: 0,
 			autoHeight: true,
 			speed: 800,
-         grabCursor: true,
-         centeredSlides: true,
-         slidesOffsetBefore: 1200,
+         grabCursor: true,        
+         // slidesOffsetBefore: 1200,
+         // slidesOffsetAfter: -1200,
 
 			// Кнопки "влево/вправо"
 			navigation: {

@@ -1,10 +1,7 @@
 @media screen and (max-width: 1044px) {
 
    .about {
-      &__container {
-         padding: 80px 30px 105px;
-      }
-
+     
       &__wrap {
          flex-wrap: wrap;
       }
@@ -32,11 +29,43 @@
 
    .story {
       &__content {
-         margin: 0 100px 70px 0;
+         margin: 0 100px 60px 0;
       }
 
       &__img-wrap::after {
          display: none;
+      }
+   }
+
+   .testimonials {
+
+      &__title {
+         margin: 0;
+      }
+
+      .swiper {
+
+         &__wrapper {
+            margin-bottom: 70px;
+         }
+
+         &__article {
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &::after {
+               display: none;
+            }
+         }
+
+         &__content {
+            margin: 50px 0 0;
+         }
+
+         &__text {
+            margin-bottom: 20px;
+         }
       }
    }
 
@@ -62,10 +91,7 @@
    }
 
    .footer {
-      &__container {
-         padding: 0 15px 10px;
-      }
-
+      
       &__header-wrap {
          flex-direction: column;
          align-items: center;
