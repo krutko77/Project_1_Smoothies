@@ -23,7 +23,7 @@
 
    &__subtitle {
       @include font(Mulish, #ffff);
-      font-size: calc(24px + 2 * (100vw / 1980));
+      font-size: calc(24px + 2 * (100vw / 1920));
       line-height: 1.5;
       font-weight: 800;
       letter-spacing: -0.02em;
@@ -41,7 +41,7 @@
 
    &__link-info {
       font-family: Mulish;
-      font-size: calc(16px + 2 * (100vw / 1980));
+      font-size: calc(16px + 2 * (100vw / 1920));
       line-height: 1.9;
       font-weight: 700;
       letter-spacing: -0.02em;
@@ -105,7 +105,7 @@
 
       &::placeholder {
          font-family: Mulish;
-         font-size: calc(15px + 2 * (100vw / 1980));
+         font-size: calc(15px + 2 * (100vw / 1920));
          line-height: 2.0;
          font-weight: 800;
          letter-spacing: -0.02em;
@@ -117,7 +117,7 @@
       background-color: transparent;
       border: none;
       font-family: Mulish;
-      font-size: calc(14px + 2 * (100vw / 1980));
+      font-size: calc(14px + 2 * (100vw / 1920));
       line-height: 2.5;
       font-weight: 800;
       text-transform: uppercase;
@@ -161,7 +161,7 @@
    &__small {
       align-self: center;
       font-family: Mulish;
-      font-size: calc(12px + 1 * (100vw / 1980));
+      font-size: calc(12px + 1 * (100vw / 1920));
       line-height: 2.7;
       font-weight: 400;
       letter-spacing: 0.02em;
@@ -175,7 +175,8 @@
       width: 50px;
       height: 50px;
       background-color: #f2732f;
-      border-radius: 5px;     
+      border-radius: 5px;    
+      opacity: 0.8; 
 
       &:hover {
          background-color: #ee5c0d;
@@ -188,7 +189,7 @@
          right: 60px;
          width: 50px;
          font-family: Mulish;
-         font-size: calc(14px + 2 * (100vw / 1980));
+         font-size: calc(14px + 2 * (100vw / 1920));
          line-height: 2.5;
          font-weight: 400;
          letter-spacing: -0.02em;
@@ -203,11 +204,9 @@
          transform: translate(-50%, -50%);
          width: 13px;
          height: 25px;
-         background: url('./img/go_top_arrow.png') no-repeat;
-         -webkit-transform: translate(-50%, -50%);
-         -moz-transform: translate(-50%, -50%);
-         -ms-transform: translate(-50%, -50%);
-         -o-transform: translate(-50%, -50%);
+         background: url('./img/go_top_arrow.png') no-repeat;         
       }
    }
+
+
 }

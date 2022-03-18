@@ -2,13 +2,16 @@
    padding: 0 0 10px;
 
    &__wrap {
-      display: flex;
-      flex-direction: column;
-      overflow: auto;
+      display: flex;      
+      
    }
 
-   &__title {
-      align-self: center;
+   &__title-box {
+      display: flex;
+      justify-content: center;
+   }
+
+   &__title {      
       display: inline-block;
       position: relative;
       padding-left: 40px;
@@ -19,6 +22,7 @@
       font-weight: 800;
       letter-spacing: -0.02em;
       color: #0aa566;
+      transition: opacity 0.3s ease 0.1s;
 
       &:hover {
          opacity: 0.7;
@@ -27,7 +31,7 @@
       &::before {
          content: "";
          position: absolute;
-         top: 10px;
+         top: 9px;
          left: 2px;
          width: 26px;
          height: 26px;
@@ -37,15 +41,14 @@
 
    &__list {
       display: flex;
-      padding: 0;
-      margin: 0;
+      overflow: auto;     
    }
 
    &__item {
       position: relative;
       flex: 0 1 20%;
       object-fit: cover;
-      min-width: 320px;
+      min-width: 255px;
 
       &::before {
          content: "";

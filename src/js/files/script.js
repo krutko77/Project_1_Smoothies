@@ -1,13 +1,4 @@
 
-   // slick слайдер
-   // $(document).ready(function(){
-   //    $('.slider').slick({
-   //       arrows:true         
-   //    });
-   //  })
-
-
-
 // бургер меню
 const menuIcon = document.querySelector('.header__menu-icon');
 const headerMenu = document.querySelector('.header__menu');
@@ -47,3 +38,24 @@ if (menuLinks.length > 0) {
 	}
 }
 
+//выключение кнопки go-top и прокрутка вверх 
+const goTop = document.querySelector('.go-top');
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 0) {
+      goTop.style.display = 'block'
+  } else {
+      goTop.style.display = 'none'
+  }
+});
+
+let anchors = document.querySelectorAll('a[href="#header"]');
+for(let anchor of anchors ) {
+anchor.addEventListener('click', function(event) {
+   event.preventDefault()
+   let blockID = anchor.getAttribute('href')
+   document.querySelector(blockID).scrollIntoView({
+       behavior: "smooth",
+       block: "start"
+   })
+})
+}

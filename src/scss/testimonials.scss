@@ -45,7 +45,6 @@
          &::after {
             content: "Sarah A";
             font-family: Mulish;
-            // font-size: 20rem;
             font-size: calc(80px + 120 * (100vw / 1920));
             font-weight: 800;
             letter-spacing: -0.02em;
@@ -60,7 +59,7 @@
       &__content {
          display: flex;
          align-items: center;
-         flex-direction: column;         
+         flex-direction: column;
          max-width: 460px;
          margin: 55px 50px 0 0;
          z-index: 2;
