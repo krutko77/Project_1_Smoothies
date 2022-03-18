@@ -117,12 +117,8 @@
    }
 
    .testimonials {
-      &__article {
-         padding: 0;
-
-         &::after {
-            display: none;
-         }
+      .swiper__slide-wrap {
+         padding: 0;         
       }      
    }
 

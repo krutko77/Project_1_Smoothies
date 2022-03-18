@@ -49,11 +49,11 @@
             margin-bottom: 70px;
          }
 
-         &__article {
+         &__slide-wrap {
             flex-direction: column-reverse;
             align-items: center;
             margin-bottom: 15px;
-
+            
             &::after {
                display: none;
             }

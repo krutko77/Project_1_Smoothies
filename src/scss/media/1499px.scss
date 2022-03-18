@@ -16,8 +16,17 @@
       right: 20px;
    }
 
-   .testimonials__inner::after {
-      display: none;
+   .testimonials {
+      &__inner::after {
+         display: none;
+      }
+
+      // .swiper__slide-wrap {
+        
+      //    &::after {
+      //       display: none;
+      //    }
+      // }
    }
 
    .story__content {

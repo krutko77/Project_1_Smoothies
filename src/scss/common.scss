@@ -6,7 +6,7 @@
    border-radius: $border-radius;
    padding: 0 30px;
    @include font(Mulish, #ffff);
-   font-size: calc(16px + 5 * (100vw / 1980));
+   font-size: calc(16px + 5 * (100vw / 1920));
    line-height: 1.2;
    font-weight: 800;
    transition: background-color 0.3s ease;
@@ -47,7 +47,7 @@
 
 .text {
    font-family: Mulish;
-   font-size: calc(16px + 2 * (100vw / 1980));
+   font-size: calc(16px + 2 * (100vw / 1920));
    line-height: 2.0;
    font-weight: 400;
    color: #1e1e1e;
@@ -55,7 +55,7 @@
 
 .title {
    font-family: Mulish;
-   font-size: calc(30px + 20 * (100vw / 1980));
+   font-size: calc(30px + 20 * (100vw / 1920));
    line-height: 1.2;
    font-weight: 800;
    color: #f7ae3b;
