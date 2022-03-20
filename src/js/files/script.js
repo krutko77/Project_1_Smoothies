@@ -8,7 +8,7 @@ window.addEventListener('scroll', function() {
   }
 });
 
-let anchors = document.querySelectorAll('a[href="#top"]');
+let anchors = document.querySelectorAll('a[href="#header"]');
 for(let anchor of anchors ) {
 anchor.addEventListener('click', function(event) {
    event.preventDefault()

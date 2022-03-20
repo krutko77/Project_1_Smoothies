@@ -59,7 +59,7 @@
 
       &__title {
          margin: 0 0 20px;
-      }      
+      }
    }
 
    .grid__item {
@@ -71,7 +71,7 @@
    }
 
    .testimonials {
-      padding: 50px 0 30px;    
+      padding: 50px 0 30px;
 
       .swiper {
 
@@ -94,9 +94,8 @@
    }
 
    .footer {
+
       &__header-wrap {
-         flex-direction: column;
-         align-items: center;
          padding: 30px 0px 0px;
       }
 
@@ -104,15 +103,12 @@
          margin: 0 auto 30px;
       }
 
-      &_central-block {
-         flex-direction: column;
-         align-items: flex-start;
-         max-width: 310px;
-         margin: 0;
+      &__central-block {
+         justify-content: space-between;
       }
 
       &__information {
-         margin: 0 0 30px;
+         margin-right: 50px;
       }
 
       &__payment {
@@ -124,17 +120,9 @@
       }
 
       &__form-input {
-         width: 310px;
+         width: 340px;
          height: 50px;
          border-radius: 25px;
-         -webkit-border-radius: 25px;
-         -moz-border-radius: 25px;
-         -ms-border-radius: 25px;
-         -o-border-radius: 25px;
-      }
-
-      &__form-btn {
-         padding-right: 70px;
       }
 
       &__form::before {
@@ -143,16 +131,17 @@
 
       &__form::after {
          top: 60px;
-         left: 15px;
+         left: 50px;
+      }
+
+      &__form-btn {
+         margin: 0 auto 20px;
       }
 
       &__social {
-         padding-right: 0px;
-         transform: translate(-10px, -35px);
-         -webkit-transform: translate(-10px, -35px);
-         -moz-transform: translate(-10px, -35px);
-         -ms-transform: translate(-10px, -35px);
-         -o-transform: translate(-10px, -35px);
+         transform: translate(0, 0);
+         justify-content: center;
+         margin-bottom: 30px;
       }
 
       &__form-social {

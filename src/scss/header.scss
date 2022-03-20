@@ -5,10 +5,11 @@
    background-position: center;
 
    &__title {
-      font-size: 200px;
+      // font-size: 200px;
+      font-size: calc(30px + 170 * (100vw / 1920));
       font-weight: 800;
       color: #DE3E86;
-      text-shadow: #533d4a 8px 8px;
+      text-shadow: #533d4a calc(5px + 3 * (100vw / 1920)) calc(5px + 3 * (100vw / 1920));
       animation: show 3s;
    }
 
@@ -69,7 +70,7 @@
       }
 
       &__item {
-         margin: 0 35px 0 0;         
+         margin: 0 35px 0 0;
          transition: color 0.2s ease;
 
          &:hover {

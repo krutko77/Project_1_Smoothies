@@ -7,23 +7,25 @@
 
    &__header-wrap {
       display: flex;
+      justify-content: space-between;
       padding: 70px 0px 60px;
-      flex-wrap: wrap;
    }
 
    &__logo {
-      margin: 65px 15.3vw 0 0;     
+      margin: 65px 15.3vw 0 0;
    }
 
    &__central-block {
       display: flex;
+      justify-content: space-between;
       margin-right: 6.4vw;
-      width: 590px;
+      max-width: 590px;
+      width: 100%;
    }
 
    &__subtitle {
-      @include font(Mulish, #ffff);
-      font-size: calc(24px + 2 * (100vw / 1920));
+      color: #ffff;
+      font-size: 26px;
       line-height: 1.5;
       font-weight: 800;
       letter-spacing: -0.02em;
@@ -31,7 +33,7 @@
    }
 
    &__information {
-      margin-right: 7.8vw;
+      margin-right: 50px;
    }
 
    &__list-info {
@@ -40,12 +42,12 @@
    }
 
    &__link-info {
-      font-family: Mulish;
-      font-size: calc(16px + 2 * (100vw / 1920));
+      font-size: 18px;
       line-height: 1.9;
       font-weight: 700;
       letter-spacing: -0.02em;
       color: #6d450c;
+      transition: opacity 0.3s ease 0.1s;
 
       &:hover {
          opacity: 0.6;
@@ -66,6 +68,7 @@
    &__payment-item {
       margin-right: 20px;
       margin-bottom: 20px;
+      transition: opacity 0.3s ease 0.1s;
 
       &:hover {
          opacity: 0.6;
@@ -80,7 +83,7 @@
       &::after {
          content: "";
          position: absolute;
-         bottom: 5px;
+         bottom: 32px;
          left: 125px;
          width: 48px;
          height: 43px;
@@ -96,38 +99,49 @@
       width: 495px;
       height: 60px;
       border-radius: 30px;
-      border: none;
-      padding: 20px 0 15px 70px;
+      font-size: calc(15px + 2 * (100vw / 1920));
+      padding: 21px 0 20px 70px;
       margin-bottom: 20px;
       background-image: url('./img/ft_input.png');
       background-repeat: no-repeat;
       background-position: 30px;
 
       &::placeholder {
-         font-family: Mulish;
          font-size: calc(15px + 2 * (100vw / 1920));
          line-height: 2.0;
-         font-weight: 800;
-         letter-spacing: -0.02em;
+         font-weight: 400;
+         letter-spacing: 0.1px;
          color: #6d450c;
+      }
+
+      &:focus {
+         outline: 0;
+         outline-offset: 0;
       }
    }
 
    &__form-btn {
+      display: inline-block;
+      width: 130px;
+      margin: 0 auto;
       background-color: transparent;
       border: none;
-      font-family: Mulish;
-      font-size: calc(14px + 2 * (100vw / 1920));
+      font-size: 16px;
       line-height: 2.5;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: #6d450c;
-      padding-right: 10px;
+      letter-spacing: 0.1px;
+      color: #6d450c;      
+      z-index: 2;
       cursor: pointer;
+      transition: opacity 0.3s ease 0.1s;
 
       &:hover {
-         opacity: 0.6;
+         opacity: 0.7;
+      }
+
+      &:active {
+         transform: translate(1px, 2px);
       }
    }
 
@@ -140,6 +154,7 @@
 
    &__social-item {
       margin-right: 25px;
+      transition: opacity 0.3s ease 0.1s;
 
       &:hover {
          opacity: 0.6;
@@ -160,8 +175,7 @@
 
    &__small {
       align-self: center;
-      font-family: Mulish;
-      font-size: calc(12px + 1 * (100vw / 1920));
+      font-size: 12px;
       line-height: 2.7;
       font-weight: 400;
       letter-spacing: 0.02em;
@@ -175,8 +189,9 @@
       width: 50px;
       height: 50px;
       background-color: #f2732f;
-      border-radius: 5px;    
-      opacity: 0.8; 
+      border-radius: 5px;
+      opacity: 0.8;
+      transition: background-color 0.3s ease 0.1s;
 
       &:hover {
          background-color: #ee5c0d;
@@ -188,7 +203,6 @@
          top: 35px;
          right: 60px;
          width: 50px;
-         font-family: Mulish;
          font-size: calc(14px + 2 * (100vw / 1920));
          line-height: 2.5;
          font-weight: 400;
@@ -204,7 +218,7 @@
          transform: translate(-50%, -50%);
          width: 13px;
          height: 25px;
-         background: url('./img/go_top_arrow.png') no-repeat;         
+         background: url('./img/go_top_arrow.png') no-repeat;
       }
    }
 

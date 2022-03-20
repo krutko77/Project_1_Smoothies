@@ -1,7 +1,7 @@
 @media screen and (max-width: 1044px) {
 
    .about {
-     
+
       &__wrap {
          flex-wrap: wrap;
       }
@@ -53,7 +53,7 @@
             flex-direction: column-reverse;
             align-items: center;
             margin-bottom: 15px;
-            
+
             &::after {
                display: none;
             }
@@ -91,30 +91,25 @@
    }
 
    .footer {
-      
+
       &__header-wrap {
          flex-direction: column;
          align-items: center;
-         padding: 60px 0 0;
+         padding: 50px 0 0;
       }
 
       &__logo {
-         margin: 0 0 55px;
+         margin: 0 0 20px;
       }
 
       &__central-block {
-         display: flex;
          justify-content: space-around;
-         width: 100%;
          margin: 0;
-      }
-
-      &__information {
-         margin-right: 50px;
+         max-width: 700px;
       }
 
       &__payment {
-         width: 265px;
+         max-width: 265px;
       }
 
       &__form-social {

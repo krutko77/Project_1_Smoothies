@@ -17,16 +17,11 @@
       }
 
       &__logo {
-         margin: 65px 5px 0 0;
-      }
-
-      &__information {
-         margin-right: 100px;
+         margin: 65px 8.3vw 0 0;
       }
 
       &__central-block {
-         justify-content: flex-end;
-         width: 640px;
+         max-width: 590px;
          margin-right: 70px;
       }
    }

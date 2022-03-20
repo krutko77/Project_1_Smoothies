@@ -118,14 +118,25 @@
 
    .testimonials {
       .swiper__slide-wrap {
-         padding: 0;         
-      }      
+         padding: 0;
+      }
    }
 
    .footer {
-      
+
+      &__info-item {
+        font-size: 22px;
+      }
       &__payment {
          width: 265px;
+      }
+
+      &__social {
+         transform: translate(-30px, -35px);
+      }
+
+      &__social-item {
+         margin-right: 35px;
       }
    }
 }

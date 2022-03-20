@@ -19,14 +19,7 @@
    .testimonials {
       &__inner::after {
          display: none;
-      }
-
-      // .swiper__slide-wrap {
-        
-      //    &::after {
-      //       display: none;
-      //    }
-      // }
+      }     
    }
 
    .story__content {
@@ -41,18 +34,11 @@
    .footer {
       &__header-wrap {
          padding: 30px 0 0;
-      }
-
-      &__logo {
-         margin: 65px 5px 0 0;
+         flex-wrap: wrap;
       }
 
       &__central-block {
          margin: 0 0 0 70px;
-      }
-
-      &__information {
-         margin-right: 15vw;
       }
 
       &__subtitle {

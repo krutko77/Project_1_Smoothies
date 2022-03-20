@@ -3,4 +3,28 @@
    .about__title--green::after {
       display: none;
    }
+
+   .footer {
+
+      &__form::after {
+         top: 60px;
+         left: 28px;
+      }
+
+      &__central-block {
+         flex-direction: column;         
+      }
+
+      &__information {
+         margin: 0 20px 30px 0;
+      }
+
+      &__subtitle {
+         padding: 0;
+      }
+
+      &__form-input {
+         width: 290px;
+      }
+   }
 }
