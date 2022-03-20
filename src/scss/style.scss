@@ -12,7 +12,7 @@ body {
 
 body._lock {
       overflow: hidden;
-      touch-action: none;
+      // touch-action: none;
    }
 
 .wrapper {
@@ -54,6 +54,7 @@ body._lock {
 @import "./media/1499px.scss";
 @import "./media/1274px.scss";
 @import "./media/1044px.scss";
+@import "./media/device-aspect-ratio.scss";
 @import "./media/768px.scss";
 @import "./media/570px.scss";
 @import "./media/400px.scss";

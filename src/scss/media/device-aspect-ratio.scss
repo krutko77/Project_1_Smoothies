@@ -1,0 +1,11 @@
+@media screen and (min-device-aspect-ratio: 3/2) {
+   .header {
+      &__title {
+         display: none;
+      }
+
+      &__top {
+         margin-bottom: 0;
+      }
+   }
+  }

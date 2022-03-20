@@ -48,16 +48,17 @@
          left: -100%;
          width: 100%;
          height: 100%;
+         overflow: auto;
          background-color: #0aa566;
          z-index: 99;
          flex-direction: column-reverse;
          justify-content: flex-end;
          padding-top: 100px;
-         transition: all 0.5s;
+         transition: all 0.5s;         
       }
 
       &__menu._active {
-         position: fixed;
+         flex-wrap: nowrap;
          left: 0;
       }
 
@@ -125,8 +126,9 @@
    .footer {
 
       &__info-item {
-        font-size: 22px;
+         font-size: 22px;
       }
+
       &__payment {
          width: 265px;
       }
