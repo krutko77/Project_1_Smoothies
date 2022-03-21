@@ -16,12 +16,9 @@
       position: relative;
       padding-left: 40px;
       margin: 0 0 40px;
-      font-family: Mulish;
       font-size: calc(22px + 2 * (100vw / 1980));
-      line-height: 1.6;
-      font-weight: 800;
+      @include font(800, 160%, #0aa566);
       letter-spacing: -0.02em;
-      color: #0aa566;
       transition: opacity 0.3s ease 0.1s;
 
       &:hover {

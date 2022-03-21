@@ -6,8 +6,7 @@
 
    &__title {
       font-size: calc(30px + 170 * (100vw / 1920));
-      font-weight: 800;
-      color: #DE3E86;
+      @include font(800, 120%, #DE3E86);
       text-shadow: #533d4a calc(5px + 3 * (100vw / 1920)) calc(5px + 3 * (100vw / 1920));
       animation: show 3s;
    }
@@ -62,9 +61,8 @@
       }
 
       &__list {
-         color: #ffff;
          font-size: calc(14px + 2 * (100vw / 1920));
-         font-weight: 700;
+         @include font(700, 120%, #ffff);
          text-transform: uppercase;
       }
 

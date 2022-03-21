@@ -21,7 +21,7 @@
    }
 
    &__title {
-      font-size: calc(35px + 20 * (100vw / 1980));
+      font-size: calc(35px + 20 * (100vw / 1920));
       @include font(400, 110%, #ffff);
       margin: 0 0 45px;
 
@@ -42,8 +42,7 @@
    }
 
    &__list {
-      list-style-image: url('./../img/icons/about.png');
-      font-size: calc(18px + 3 * (100vw / 1980));
+      font-size: calc(18px + 3 * (100vw / 1920));
       @include font(400, 210%, #ffff);
       padding-left: 25px;
       margin-bottom: 40px;
@@ -51,6 +50,17 @@
 
    &__item {
       padding-left: 10px;
+      position: relative;
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 9px;
+         left: -23px;
+         width: 18px;
+         height: 18px;
+         background-image: url('./../img/icons/about.png');
+      }
    }
 
    &__btn {

@@ -44,11 +44,9 @@
 
          &::after {
             content: "Sarah A";
-            font-family: Mulish;
             font-size: calc(80px + 120 * (100vw / 1920));
-            font-weight: 800;
+            @include font(800, 120%, #521905);
             letter-spacing: -0.02em;
-            color: #521905;
             position: absolute;
             top: 0;
             left: 70px;
@@ -67,17 +65,13 @@
 
       &__text {
          text-align: center;
-         line-height: 3.5rem;
-         font-weight: 400;
-         color: #ffffff;
+         @include font(400, 200%, #ffff);
          margin-bottom: 20px;
          z-index: 2;
       }
 
       &__caption--orange {
-         line-height: 1.2;
-         font-weight: 600;
-         color: #f7ae3b;
+         @include font(600, 120%, #f7ae3b);
          margin: 0;
       }
 

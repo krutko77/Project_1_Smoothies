@@ -41,9 +41,7 @@
    
       &__caption {         
          font-size: calc(15px + 10 * (100vw / 1980));
-         line-height: 1.6;
-         font-weight: 800;
-         color: #f2612d;
+         @include font(800, 160%, #f2612d);
          letter-spacing: -0.02em;
       }
    }

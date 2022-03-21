@@ -24,10 +24,8 @@
    }
 
    &__subtitle {
-      color: #ffff;
+      @include font(800, 150%, #ffff);
       font-size: 26px;
-      line-height: 1.5;
-      font-weight: 800;
       letter-spacing: -0.02em;
       margin: 0 0 20px;
    }
@@ -42,11 +40,9 @@
    }
 
    &__link-info {
+      @include font(700, 190%, #6d450c);
       font-size: 18px;
-      line-height: 1.9;
-      font-weight: 700;
       letter-spacing: -0.02em;
-      color: #6d450c;
       transition: opacity 0.3s ease 0.1s;
 
       &:hover {
@@ -108,10 +104,7 @@
 
       &::placeholder {
          font-size: calc(15px + 2 * (100vw / 1920));
-         line-height: 2.0;
-         font-weight: 400;
-         letter-spacing: 0.1px;
-         color: #6d450c;
+         @include font(400, 200%, #6d450c);               
       }
 
       &:focus {
@@ -126,12 +119,10 @@
       margin: 0 auto;
       background-color: transparent;
       border: none;
+      @include font(800, 250%, #6d450c);
       font-size: 16px;
-      line-height: 2.5;
-      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.1px;
-      color: #6d450c;      
+      letter-spacing: 0.01em;           
       z-index: 2;
       cursor: pointer;
       transition: opacity 0.3s ease 0.1s;
@@ -175,11 +166,9 @@
 
    &__small {
       align-self: center;
-      font-size: 12px;
-      line-height: 2.7;
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      color: #af8a82;
+      @include font(400, 270%, #af8a82);
+      font-size: 12px;      
+      letter-spacing: 0.02em;      
    }
 
    &__go-top {
@@ -204,10 +193,8 @@
          right: 60px;
          width: 50px;
          font-size: calc(14px + 2 * (100vw / 1920));
-         line-height: 2.5;
-         font-weight: 400;
-         letter-spacing: -0.02em;
-         color: #f2662f;
+         @include font(400, 250%, #f2662f);
+         letter-spacing: -0.02em;         
       }
 
       &::after {

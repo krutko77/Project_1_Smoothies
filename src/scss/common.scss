@@ -3,12 +3,10 @@
 .btn {
    position: relative;
    height: 60px;
-   border-radius: $border-radius;
+   border-radius: 35px;
    padding: 0 30px;
-   color: #ffff;
    font-size: calc(16px + 5 * (100vw / 1920));
-   line-height: 1.2;
-   font-weight: 800;
+   @include font(800, 120%, #ffff);
    transition: background-color 0.3s ease;
    
 
@@ -47,16 +45,12 @@
 
 .text {
    font-size: calc(16px + 2 * (100vw / 1920));
-   line-height: 2.0;
-   font-weight: 400;
-   color: #1e1e1e;
+   @include font(400, 200%, #1e1e1e);   
 }
 
 .title {
    font-size: calc(30px + 20 * (100vw / 1920));
-   line-height: 1.2;
-   font-weight: 800;
-   color: #f7ae3b;
+   @include font(800, 120%, #f7ae3b);   
    letter-spacing: -0.02em;
 }
 
