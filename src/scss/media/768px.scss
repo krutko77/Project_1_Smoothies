@@ -54,7 +54,7 @@
          flex-direction: column-reverse;
          justify-content: flex-end;
          padding-top: 100px;
-         transition: all 0.5s;         
+         transition: all 0.5s;
       }
 
       &__menu._active {
@@ -78,10 +78,6 @@
       .menu__item {
          margin: 0 0 40px;
          font-size: 20px;
-      }
-
-      .social__item {
-         margin-right: 30px;
       }
    }
 

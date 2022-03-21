@@ -1,5 +1,5 @@
 .smoothies {
-   padding: 90px 30px 125px;
+   padding: 90px 0 125px;
 
    &__wrap {
       @extend %flexCenter;
@@ -14,7 +14,7 @@
    &__text {
       max-width: 910px;
       text-align: center;
-      margin: 0 0 65px;
+      margin: 0 0 60px;
    }
 
    &__grid {
@@ -39,8 +39,7 @@
          margin-bottom: 20px;
       }
    
-      &__caption {
-         font-family: Mulish;
+      &__caption {         
          font-size: calc(15px + 10 * (100vw / 1980));
          line-height: 1.6;
          font-weight: 800;

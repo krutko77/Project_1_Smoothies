@@ -50,14 +50,14 @@
    &__title,
    &__caption,
    &__btn {
-      @include font(Mulish, #ffff);
+      color: #ffff;
    }
 
    &__btn {
       position: relative;
       background-color: transparent;
       width: 204px;
-      border: solid 2px #ffffff;
+      border: solid 2px #ffff;
       border-radius: 30px;
       padding-right: 125px;
       transition: opacity 0.3s ease;     
