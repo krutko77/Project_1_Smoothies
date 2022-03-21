@@ -2,8 +2,8 @@ import fs from 'fs';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import FileIncludeWebpackPlugin from 'file-include-webpack-plugin-replace';
 import CopyPlugin from "copy-webpack-plugin";
-import HtmlWebpackPlugin from 'html-webpack-plugin';
 import TerserPlugin from "terser-webpack-plugin";
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 import * as path from 'path';
 
@@ -36,13 +36,9 @@ const paths = {
 }
 const config = {
 	mode: "production",
-	cache: {
-		type: 'filesystem'
-	},
 	optimization: {
-		minimizer: [new TerserPlugin({
-			extractComments: false,
-		})],
+		minimize: true,
+		minimizer: [new TerserPlugin()],
 	},
 	output: {
 		path: `${paths.build}`,
