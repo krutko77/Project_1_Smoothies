@@ -83,7 +83,7 @@
          left: 125px;
          width: 48px;
          height: 43px;
-         background: url('./img/ft_arrow.png') no-repeat;
+         background: url('./../img/ft_arrow.png') no-repeat;
       }
    }
 
@@ -98,13 +98,13 @@
       font-size: calc(15px + 2 * (100vw / 1920));
       padding: 21px 0 20px 70px;
       margin-bottom: 20px;
-      background-image: url('./img/ft_input.png');
+      background-image: url('./../img/ft_input.png');
       background-repeat: no-repeat;
       background-position: 30px;
 
       &::placeholder {
          font-size: calc(15px + 2 * (100vw / 1920));
-         @include font(400, 200%, #6d450c);               
+         @include font(400, 200%, #6d450c);
       }
 
       &:focus {
@@ -122,7 +122,7 @@
       @include font(800, 250%, #6d450c);
       font-size: 16px;
       text-transform: uppercase;
-      letter-spacing: 0.01em;           
+      letter-spacing: 0.01em;
       z-index: 2;
       cursor: pointer;
       transition: opacity 0.3s ease 0.1s;
@@ -167,8 +167,8 @@
    &__small {
       align-self: center;
       @include font(400, 270%, #af8a82);
-      font-size: 12px;      
-      letter-spacing: 0.02em;      
+      font-size: 12px;
+      letter-spacing: 0.02em;
    }
 
    &__go-top {
@@ -194,7 +194,7 @@
          width: 50px;
          font-size: calc(14px + 2 * (100vw / 1920));
          @include font(400, 250%, #f2662f);
-         letter-spacing: -0.02em;         
+         letter-spacing: -0.02em;
       }
 
       &::after {
@@ -205,7 +205,7 @@
          transform: translate(-50%, -50%);
          width: 13px;
          height: 25px;
-         background: url('./img/go_top_arrow.png') no-repeat;
+         background: url('./../img/go_top_arrow.png') no-repeat;
       }
    }
 

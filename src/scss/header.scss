@@ -8,7 +8,7 @@
       font-size: calc(30px + 170 * (100vw / 1920));
       @include font(800, 120%, #DE3E86);
       text-shadow: #533d4a calc(5px + 3 * (100vw / 1920)) calc(5px + 3 * (100vw / 1920));
-      animation: show 3s;
+      animation: show 3.5s;
    }
 
    @keyframes show {
