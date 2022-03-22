@@ -2748,7 +2748,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   left: 125px;
   width: 48px;
   height: 43px;
-  background: url("./img/ft_arrow.png") no-repeat;
+  background: url("./../img/ft_arrow.png") no-repeat;
 }
 
 .footer__subtitle--form {
