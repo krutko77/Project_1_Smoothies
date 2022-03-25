@@ -1,5 +1,10 @@
 @media screen and (max-width: 400px) {
 
+   .header__menu-icon {
+      top: 25px;
+      right: 25px;
+   }
+
    .about__title--green::after {
       display: none;
    }

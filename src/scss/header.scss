@@ -46,11 +46,13 @@
       &::before {
          transform: rotate(-45deg);
          top: calc(50% - 1px);
+         background-color: white;
       }
 
       &::after {
          transform: rotate(45deg);
          bottom: calc(50% - 1px);
+         background-color: white;
       }
    }
 
