@@ -1,5 +1,6 @@
 //  выключение кнопки go-top и прокрутка вверх
 const goTop = document.querySelector('.go-top');
+goTop.style.display = 'none';
 window.addEventListener('scroll', function() {
   if (window.scrollY > 0) {
       goTop.style.display = 'block'
