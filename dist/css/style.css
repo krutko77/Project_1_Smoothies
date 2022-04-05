@@ -1976,14 +1976,18 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   margin-right: 0;
 }
 
-.header .personal__link {
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+.header .personal__icon {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.header .personal__link:hover {
-  opacity: 0.7;
+.header .personal__icon:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .header .personal__count {
@@ -2012,17 +2016,24 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .header .social__item {
   margin-right: 10px;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
 }
 
 .header .social__item:last-child {
   margin-right: 0;
 }
 
-.header .social__item:hover {
-  opacity: 0.7;
+.header .social__icon {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.header .social__icon:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .header__content {
@@ -2723,13 +2734,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .footer__payment-item {
   margin-right: 20px;
   margin-bottom: 20px;
-  -webkit-transition: opacity 0.3s ease 0.1s;
-  -o-transition: opacity 0.3s ease 0.1s;
-  transition: opacity 0.3s ease 0.1s;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .footer__payment-item:hover {
-  opacity: 0.6;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .footer__form {
@@ -2767,6 +2782,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   background-image: url("./../img/ft_input.png");
   background-repeat: no-repeat;
   background-position: 30px;
+  -webkit-transition: -webkit-box-shadow 0.3s 0.1s;
+  transition: -webkit-box-shadow 0.3s 0.1s;
+  -o-transition: box-shadow 0.3s 0.1s;
+  transition: box-shadow 0.3s 0.1s;
+  transition: box-shadow 0.3s 0.1s, -webkit-box-shadow 0.3s 0.1s;
 }
 
 .footer__form-input::-webkit-input-placeholder {
@@ -2807,6 +2827,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 .footer__form-input:focus {
   outline: 0;
   outline-offset: 0;
+  -webkit-box-shadow: 0 0 10px 0px rgba(199, 47, 12, 0.75);
+          box-shadow: 0 0 10px 0px rgba(199, 47, 12, 0.75);
+}
+
+.footer__form-input:hover {
+  -webkit-box-shadow: 0 0 10px 0px rgba(199, 47, 12, 0.75);
+          box-shadow: 0 0 10px 0px rgba(199, 47, 12, 0.75);
 }
 
 .footer__form-btn {
@@ -2853,13 +2880,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .footer__social-item {
   margin-right: 25px;
-  -webkit-transition: opacity 0.3s ease 0.1s;
-  -o-transition: opacity 0.3s ease 0.1s;
-  transition: opacity 0.3s ease 0.1s;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .footer__social-item:hover {
-  opacity: 0.6;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .footer__social-item:last-child {
